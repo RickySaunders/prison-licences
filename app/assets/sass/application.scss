@@ -146,7 +146,7 @@ $govuk-assets-path: '/govuk/assets/';
     }
 
     .warning-info {
-      background-color: govuk-colour("green");
+      background-color: govuk-colour("white");
       color: white;
       margin-top: 5px;
       padding: 8px;
@@ -191,7 +191,7 @@ $govuk-assets-path: '/govuk/assets/';
     }
 
       .govuk-button {
-        background-color: govuk-colour("blue");
+        background-color: govuk-colour("white");
         box-shadow: 0 2px 0 govuk-colour("white");
         margin-bottom: 0;
         width: 50%;
