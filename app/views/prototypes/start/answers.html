@@ -20,12 +20,6 @@
 {% block content %}
 
 
-        
-  
-      
-    
-
-
   
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
@@ -153,6 +147,23 @@
 
         </dl>
 
+        <form action="/form-handler" method="post" novalidate>
+
+          <input type="hidden" name="answers-checked" value="true">
+
+          <a href="#" class="govuk-button show-continue">
+         Create a licence
+    </a>
+  &nbsp; &nbsp;
+  
+    <a href="#"  class="govuk-button govuk-button--secondary">Change status</a><br>
+
+    &nbsp; &nbsp;
+
+        </form>
+
+      
+        <p>&nbsp;</p>
 
 
 
@@ -267,7 +278,7 @@
         
         
 
-        <h2 class="govuk-heading-m">Application owner</h2>
+        <h2 class="govuk-heading-m">Probation office</h2>
         
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
@@ -342,7 +353,7 @@
 
 
 
-        <h2 class="govuk-heading-m">Super user</h2>
+        <h2 class="govuk-heading-m">Somebody else</h2>
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
@@ -394,7 +405,7 @@
         </dl>
 
 
-        <h2 class="govuk-heading-m">Agreement signatory</h2>
+        <h2 class="govuk-heading-m">Approval signatory</h2>
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
@@ -454,7 +465,7 @@
           <input type="hidden" name="answers-checked" value="true">
 
           <a href="dash2-approve" class="govuk-button show-continue">
-         Approve 
+         Create a licence
     </a>
   &nbsp; &nbsp;
   
@@ -474,12 +485,11 @@
 
         </form>
 
-      </div>
-    </div>
-  </main>
-</div>
+     
+    
+  
 
-</fieldset><br>
+</fieldset>
 
 
         
