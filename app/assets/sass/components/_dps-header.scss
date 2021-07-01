@@ -1,268 +1,21 @@
-// global styles for <a> and <p> tags
-$govuk-global-styles: true;
-
-// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
-$govuk-assets-path: '/govuk/assets/';
-$moj-page-width: 1170px;
-$govuk-page-width: $moj-page-width;
-
-// Import GOV.UK Frontend and any extension styles if extensions have been configured
-@import "lib/extensions/extensions";
-
-// Patterns that aren't in Frontend
-@import "patterns/step-by-step-navigation";
-@import "patterns/task-list";
-@import "patterns/related-items";
-
-// Components that aren't in Frontend
-@import "components/cookie-banner";
-@import "components/dps-header";
-@import "components/cards";
-@import "components/date_time";
-
-.app-sub-navigation {
-    margin-bottom: govuk-spacing(7);
-  }
-  
-  
-  .app-sub-navigation__list {
-    font-size: 0; // Removes white space when using inline-block on child element.
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  
-    @include govuk-media-query($from: 375px) {
-      box-shadow: inset 0 -1px 0 $govuk-border-colour;
-      width: 100%;
-    }
-  
-    // IE8 does not support box shadow, so use a standard border.
-    @include govuk-if-ie8 {
-      border-bottom: 1px solid $govuk-border-colour;
-    }
-  
-  }
-  
-  
-  .app-sub-navigation__item {
-    @include govuk-font(19);
-    box-shadow: inset 0 -1px 0 $govuk-border-colour;
-    display: block;
-    margin-top: -1px;
-  
-    &:last-child {
-      box-shadow: none;
-    }
-  
-    @include govuk-media-query($from: 375px) {
-      box-shadow: none;
-      display: inline-block;
-      margin-right: govuk-spacing(4);
-      margin-top: 0;
-    }
-  
-  }
-  
-  
-  .app-sub-navigation__link {
-    @include govuk-link-common;
-    @include govuk-link-style-default;
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 17px;
-    padding-left: govuk-spacing(3);
-    text-decoration: none;
-    position: relative;
-    font-weight: bold;
-  
-    @include govuk-media-query($from: 375px) {
-      padding-left: 0;
-    }
-  
-    &:link,
-    &:visited {
-      color: $govuk-link-colour;
-    }
-  
-    &:hover {
-      color: govuk-colour('black')
-    }
-  
-    &:focus {
-      color: govuk-colour("black"); // Focus colour on yellow should really be black.
-      position: relative; // Ensure focus sits above everything else.
-      box-shadow: none;
-    }
-  
-    &:focus:before {
-      background-color: govuk-colour("black");
-      content: "";
-      display: block;
-      width: 100%;
-      position: absolute; bottom: 0; left: 0; right: 0;
-      height: 5px;
-    }
-  
-  }
-  
-  
-  .app-sub-navigation__link[aria-current="page"] {
-    color: $govuk-link-active-colour;
-    position: relative;
-    text-decoration: none;
-  
-    &:before {
-      background-color: $govuk-link-colour;
-      content: "";
-      display: block;
-      height: 100%;
-      position: absolute; bottom: 0; left: 0;
-      width: 5px;
-  
-      @include govuk-media-query($from: 375px) {
-        height: 5px;
-        width: 100%;
-      }
-  
-    }
-  
-    &:focus:before {
-      background-color: govuk-colour("black");
-    }
-  
-  }
-
-
-
-// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
-
-.tile-group {
-
-  .tile {
-    position: relative;
-    margin-bottom: 26px;
-
-    .min-height {
-      min-height: 82px;
-    }
-
-    .min-height-small {
-      min-height: 67px;
-    }
-
-    .warning-info {
-      background-color: govuk-colour("white");
-      color: white;
-      margin-top: 5px;
-      padding: 8px;
-      padding-left: 11px;
-    }
-
-    .warning-info-2 {
-      @extend .warning-info;
-      background-color: govuk-colour("white");
-      color: black;
-      border: 1px solid $govuk-border-colour;
-      margin-top: 0;
-    }
-
-    .onboarding-info {
-      display: none;
-      position: absolute;
-      top: 135px;
-      background-color: rgba($color: govuk-colour("black"), $alpha: .9);
-      color: white;
-      z-index: 1;
-      padding: 15px;
-
-      .arrow-up {
-        width: 0; 
-        height: 0; 
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        border-bottom: 15px solid rgba($color: govuk-colour("black"), $alpha: .9);
-        position: absolute;
-        top: -15px;
-        left: 45%;
-      }
-
-      a.close {
-        display: block;
-        padding: 0;
-        text-align: right;
-        background-color: initial;
-        text-decoration: underline;
-        // position: absolute;     
-    }
-
-      .govuk-button {
-        background-color: govuk-colour("white");
-        box-shadow: 0 2px 0 govuk-colour("white");
-        margin-bottom: 0;
-        width: 50%;
-        z-index: 1;
-      }
-    }
-
-  }
-
-  a {
-    display: block;
-    background-color: $govuk-link-colour;
-    color: white;
-    text-decoration: none;
-    padding: 11px;
-
-    .heading {
-      color: white;
-      margin-bottom: 10px;
-    }
-
-    .sub-heading {
-      text-decoration: underline;
-    }
-
-  }
-
-  a.grey {
-    background-color: govuk-colour("light-grey");
-    color: $govuk-link-colour;
-    border: 1px solid $govuk-border-colour;
-    border-bottom: 0;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  a:hover .heading {
-    opacity: 0.85;
-  }
-
-  a:hover .sub-heading {
-    opacity: 0.85;
-  }
-
-  a.grey:hover {
-    color: govuk-colour("light-blue");
-  }
-
-}
 .dps-header {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #0b0c0c
 }
+
 @media(min-width: 40.0625em) {
   .dps-header {
     padding-top:15px
   }
 }
+
 @media(min-width: 40.0625em) {
   .dps-header {
     padding-bottom:15px
   }
 }
+
 .dps-header__container {
   max-width: 1170px;
   margin-right: 15px;
@@ -271,17 +24,20 @@ $govuk-page-width: $moj-page-width;
   justify-content: space-between;
   align-items: center
 }
+
 @supports(margin: unquote('max(calc(0px)))')) {
   .dps-header__container {
     margin-right: unquote('max(15px, calc(15px + env(safe-area-inset-right)))');
     margin-left: unquote('max(15px, calc(15px + env(safe-area-inset-left)))')
   }
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__container {
     margin-right:30px;
     margin-left: 30px
   }
+
   @supports(margin: unquote('max(calc(0px)))')) {
     .dps-header__container {
       margin-right:unquote('max(30px, calc(15px + env(safe-area-inset-right)))');
@@ -289,11 +45,13 @@ $govuk-page-width: $moj-page-width;
     }
   }
 }
+
 @media(min-width: 1230px) {
   .dps-header__container {
     margin-right:auto;
     margin-left: auto
   }
+
   @supports(margin: unquote('max(calc(0px)))')) {
     .dps-header__container {
       margin-right:auto;
@@ -301,27 +59,32 @@ $govuk-page-width: $moj-page-width;
     }
   }
 }
+
 .dps-header__logo {
   margin-right: 10px;
   position: relative;
   top: -2px;
   fill: #fff
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__logo {
     margin-right:10px
   }
 }
+
 .dps-header__title {
   padding-right: 15px;
   display: flex;
   align-items: center
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__title {
     padding-right:15px
   }
 }
+
 .dps-header__title__organisation-name {
   margin-right: 10px;
   font-family: "GDS Transport",arial,sans-serif;
@@ -334,16 +97,19 @@ $govuk-page-width: $moj-page-width;
   display: flex;
   align-items: center
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__title__organisation-name {
     margin-right:10px
   }
 }
+
 @media print {
   .dps-header__title__organisation-name {
     font-family: sans-serif
   }
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__title__organisation-name {
     font-size:24px;
@@ -351,12 +117,14 @@ $govuk-page-width: $moj-page-width;
     line-height: 1.25
   }
 }
+
 @media print {
   .dps-header__title__organisation-name {
     font-size: 18pt;
     line-height: 1.15
   }
 }
+
 .dps-header__title__service-name {
   display: none;
   font-family: "GDS Transport",arial,sans-serif;
@@ -367,11 +135,13 @@ $govuk-page-width: $moj-page-width;
   font-size: 1.125rem;
   line-height: 1.1111111111
 }
+
 @media print {
   .dps-header__title__service-name {
     font-family: sans-serif
   }
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__title__service-name {
     font-size:24px;
@@ -379,27 +149,32 @@ $govuk-page-width: $moj-page-width;
     line-height: 1.25
   }
 }
+
 @media print {
   .dps-header__title__service-name {
     font-size: 18pt;
     line-height: 1.15
   }
 }
+
 @media(min-width: 48.0625em) {
   .dps-header__title__service-name {
     display:inline-block
   }
 }
+
 .dps-header__link {
   font-family: "GDS Transport",arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
+
 @media print {
   .dps-header__link {
     font-family: sans-serif
   }
 }
+
 .dps-header__link:focus {
   outline: 3px solid transparent;
   color: #0b0c0c;
@@ -407,34 +182,44 @@ $govuk-page-width: $moj-page-width;
   box-shadow: 0 -2px #fd0,0 4px #0b0c0c;
   text-decoration: none
 }
+
 .dps-header__link:link {
   color: #1d70b8
 }
+
 .dps-header__link:visited {
   color: #4c2c92
 }
+
 .dps-header__link:hover {
   color: #003078
 }
+
 .dps-header__link:active {
   color: #0b0c0c
 }
+
 .dps-header__link:focus {
   color: #0b0c0c
 }
+
 .dps-header__link:link,.dps-header__link:visited,.dps-header__link:active {
   color: #fff;
   text-decoration: none
 }
+
 .dps-header__link:hover {
   text-decoration: underline
 }
+
 .dps-header__link:focus {
   color: #0b0c0c
 }
+
 .dps-header__link:focus svg {
   fill: #0b0c0c
 }
+
 .dps-header__link__sub-text {
   font-family: "GDS Transport",arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -445,11 +230,13 @@ $govuk-page-width: $moj-page-width;
   line-height: 1.1428571429;
   display: none
 }
+
 @media print {
   .dps-header__link__sub-text {
     font-family: sans-serif
   }
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__link__sub-text {
     font-size:16px;
@@ -457,17 +244,20 @@ $govuk-page-width: $moj-page-width;
     line-height: 1.25
   }
 }
+
 @media print {
   .dps-header__link__sub-text {
     font-size: 14pt;
     line-height: 1.2
   }
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__link__sub-text {
     display:block
   }
 }
+
 .dps-header__navigation {
   display: flex;
   flex-direction: column;
@@ -476,12 +266,14 @@ $govuk-page-width: $moj-page-width;
   margin: 0;
   padding: 0
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__navigation {
     flex-direction:row;
     align-items: center
   }
 }
+
 .dps-header__navigation__item {
   font-family: "GDS Transport",arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -493,11 +285,13 @@ $govuk-page-width: $moj-page-width;
   margin-bottom: 5px;
   text-align: right
 }
+
 @media print {
   .dps-header__navigation__item {
     font-family: sans-serif
   }
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__navigation__item {
     font-size:19px;
@@ -505,12 +299,14 @@ $govuk-page-width: $moj-page-width;
     line-height: 1.3157894737
   }
 }
+
 @media print {
   .dps-header__navigation__item {
     font-size: 14pt;
     line-height: 1.15
   }
 }
+
 @media(min-width: 40.0625em) {
   .dps-header__navigation__item {
     margin-right:15px;
@@ -519,24 +315,29 @@ $govuk-page-width: $moj-page-width;
     border-right: 1px solid #fff
   }
 }
+
 @media(min-width: 40.0625em)and (min-width: 40.0625em) {
   .dps-header__navigation__item {
     margin-right:20px
   }
 }
+
 @media(min-width: 40.0625em)and (min-width: 40.0625em) {
   .dps-header__navigation__item {
     padding-right:20px
   }
 }
+
 .dps-header__navigation__item a {
   display: inline-block
 }
+
 .dps-header__navigation__item:last-child {
   margin-right: 0;
   border-right: 0;
   padding-right: 0
 }
+
 @media print {
   .dps-header {
     display: none
