@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Your licence caseload</h1>
+
+  
+
+  
+          <h2 class="govuk-heading-m"></h2>
+          
+  
+  
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header app-custom-class">Name</th>
+                <th scope="col" class="govuk-table__header app-custom-class">Conditional release date</th>
+                <th scope="col" class="govuk-table__header app-custom-class">Status</th>
+              </tr>
+            </thead>
+            
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a href="answers" class="govuk-link govuk-link--no-visited-state">
+                  Richard Curtis
+                </a></th>
+                <td class="govuk-table__cell">21 October 21</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">
+                  Urgent
+                </strong></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"> <a class=“govuk-link--no-visited-state” href=“”>
+                  Jonathan Briger</a></th>
+                <td class="govuk-table__cell">21 October 21</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">
+                  In progress
+                </strong></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a class=“govuk-link--no-visited-state” href=“one”>
+                  Yo-yo Ma</a></th>
+                <td class="govuk-table__cell">19 November 21</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
+                  Not started
+                </strong></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a class=“govuk-link--no-visited-state” href=“one”>
+                  Matthew Garcia</a></th>
+                <td class="govuk-table__cell">19 November 21</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
+                  New
+                </strong></td>
+              </tr>
+            </tbody>
+            
+            
+          </table>
+  
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+  
+
+         
+      
+
+
+{% endblock %}
