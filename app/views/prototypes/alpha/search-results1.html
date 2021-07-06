@@ -3,6 +3,11 @@
 {% block page_title %}
   GOV.UK prototype kit
 {% endblock %}
+{% block header %}
+    
+    
+{% endblock %}
+
 {% block beforeContent %}
   <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content">
@@ -14,8 +19,10 @@
     </span>
   </p>
 </div>
+  
 
 {% endblock %}
+
 
 {% block content %}
 
@@ -27,20 +34,12 @@
       </div>
 </div>
 
-<form class="horizontal-form" data-test="homepage-search-form">
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="width-20">
-      Name or prison number
-    </label>
-    <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-  </div>
-  <div class="govuk-form-group">
-     
-    
-  </div><button class="govuk-button" data-module="govuk-button" type="submit">Search</button>
-</form>
-
-
+<div class="govuk-form-group">
+  <label class="govuk-label" for="width-20">
+    Name or prison number
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+</div>
           
   
   
