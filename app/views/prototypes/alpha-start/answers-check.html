@@ -13,52 +13,64 @@
   </p>
 </div>
 
- 
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
 
 {% endblock %}
 
 {% block content %}
-<div class="govuk-body account-info">
-        
-  <h1 class="govuk-heading-m">Richard Curtis
-  <span class="govuk-caption-m">Prison number: A4145LG
-  </span></h1> 
-</div>    
 
-  
+  <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
 
-        <h1 class="govuk-heading-xl">Check your answers</h1>
+        <h1 class="govuk-heading-l">Check your answers before sending for approval</h1><br>
 
-        
-
-
-       <!-- <h2 class="govuk-heading-m">Create a licence</h2>-->
+        <h2 class="govuk-heading-m">Additional and bespoke conditions</h2>
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-           
-
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Licence type
+              Not selected
             </dt>
             <dd class="govuk-summary-list__value">
-              Standard
+              
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="many-vacancies">
-                Change<span class="govuk-visually-hidden"> address</span>
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
               </a>
             </dd>
           </div>
+          
+        
+        </dl>
 
+        <h2 class="govuk-heading-m">Location and time for reporting to probation office</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Should they report to probation?
+              Northamptonshire Probation Office<br>
+20 Oxford Street<br>
+Wellingborough<br>
+Northamptonshire<br>
+NN8 4HY
             </dt>
             <dd class="govuk-summary-list__value">
-              Yes<br>
+            
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> </span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Report to
+            </dt>
+            <dd class="govuk-summary-list__value">
               Northamptonshire Probation Office<br>
 20 Oxford Street<br>
 Wellingborough<br>
@@ -66,110 +78,29 @@ Northamptonshire<br>
 NN8 4HY
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="many-vacancies-filled">
-                Change<span class="govuk-visually-hidden"> address</span>
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> licence type</span>
               </a>
             </dd>
           </div>
-
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Date and time
-            </dt>
-            <dd class="govuk-summary-list__value">
-              23 May 2021 at 10.00
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="vacancies-subject">
-                Change<span class="govuk-visually-hidden"> address</span>
-              </a>
-            </dd>
-          </div>
-
-          
-
-         <!-- <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Teacher vacancies filled
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Construction, Planning and the Built Environment - 4<br>
-              Digital / ICT - 3<br>
-              Performing arts - 1
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="filled-or">
-                Change<span class="govuk-visually-hidden"> address</span>
-              </a>
-            </dd>
-          </div>
-
           
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Difficult to fill
+              
             </dt>
             <dd class="govuk-summary-list__value">
-              Construction, Planning and the Built Environment, Digital / ICT 
+              16:00, 01/08/2021
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="difficult">
-                Change<span class="govuk-visually-hidden"> address</span>
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> licence period</span>
               </a>
             </dd>
           </div>
-
-          
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Difficult reason
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Construction, Planning and the Built Environment - No applicants, A lack of specialist skills<br>
-              Digital / ICT - No applicants, Looking for more pay
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="difficult-reason">
-                Change<span class="govuk-visually-hidden"> address</span>
-              </a>
-            </dd>
-          </div>-->
-
-          
-          
-
-
         </dl>
 
-        
 
-<!--<h2 class="govuk-heading-m govuk-!-font-size-27">Check and submit</h2>
-
-        <p class="govuk-body">By submitting, you are confirming that to the best of your knowledge, the details you are providing are correct.</p><br>-->
-
-        <form action="/form-handler" method="post" novalidate>
-
-          <input type="hidden" name="answers-checked" value="true">
-
-          <a href="confirmation" class="govuk-button show-continue">
-         Create a licence
-    </a>
-  &nbsp; &nbsp;
-
-    <!--<a href="start-staff-saved"  class="govuk-button govuk-button--secondary">Save and finish later</a>-->
-
-        </form>
-
-      </div>
-    </div>
-  
-</div>
-
-</fieldset><br>
-
-
-        
-       
+        <a href="confirmation" class="govuk-button" type="submit">Send licence to prison for approval</a>
       </div>
     </div>
   </main>
