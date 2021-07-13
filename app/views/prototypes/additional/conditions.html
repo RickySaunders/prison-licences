@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Select additional conditions
+          </h1>
+        </legend>
+        <div id="nationality-hint" class="govuk-hint">
+          Select all relevant additional conditions.
+        </div>
+
+        <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">People, contact and relationships </h1>
+
+        <h2 class="govuk-heading-m govuk-!-padding-top-7" id="">People and groups </h2>
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+            <label class="govuk-label govuk-checkboxes__label" for="nationality">
+              1a. Do not contact anyone in prison or custody unless it’s approved by your probation officer first. <br> 
+              This includes:
+<ul class="govuk-list govuk-list--bullet">
+  <li>contact through social media</li>
+  <li>asking someone else to contact them for you</li>
+  <li>leaving a message for them to find. </li>
+</ul>
+
+            </label>
+            
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+            <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+              1b.  Do not have contact or meet with anyone associated (now or in the past) with [INSERTION] unless it’s approved by your probation officer.
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+              1c. Do not have any contact with a known sex offender unless it’s approved by your probation officer. <br><br>
+
+This does not apply when you attend a treatment programme or in your approved address to people living there.
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+              1d. Tell your probation officer about any:
+
+              <ul class="govuk-list govuk-list--bullet">
+                <li>personal relationships with [INSERTION]</li>
+                <li>personal relationships or friendships when the person lives with children under 18</li>
+                <li>changes to those relationships - for example pregnancy or the end of the relationship. </li>
+              </ul>
+              
+              This includes people you knew before you were in prison.
+              
+              Your probation officer will explain what types of relationships you need to tell them about.
+              
+            </label>
+          </div>
+        </div>
+    
+      </fieldset>
+    </div><br>
+    
+   
+
+
+          <a href="question1" class="govuk-button show-continue" style="display: inline;">
+      Continue
+    </a>
+       
+ </div>
+</div>
+        
+
+
+
+{% endblock %}
