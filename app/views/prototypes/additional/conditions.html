@@ -58,6 +58,27 @@
               Do not have contact or meet with anyone associated (now or in the past) with [INSERTION] unless it’s approved by your probation officer.
             </label>
           </div>
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                Do not have contact or meet with the person named - or anyone associated with them (now or in the past) unless it’s approved by your probation officer.
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">
+                  Enter persons name
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+      
+            </div>
+           
+            
+          </div><br>
+          
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
             <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
