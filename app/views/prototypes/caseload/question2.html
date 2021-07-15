@@ -66,30 +66,41 @@
             <label class="govuk-label" for="Time">
              Time
             </label>
-            <div class="govuk-date-input" id="passport-issued">
-              <div id="passport-issued-hint" class="govuk-hint">
-                For example, 9:30am or 2:55pm
-              </div>
-              <div class="govuk-date-input__item">
-                
-                <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                    Hour
-                  </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-              </div>
-              <div class="govuk-date-input__item">
-                <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                    Minute
-                  </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-              </div>
-              
+            
+
+          <div id="passport-issued-hint" class="govuk-hint">
+            For example, 9:30am or 2:55pm
+          </div>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Hour
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
             </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Minute
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  am or pm
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                  <option value="published">am</option>
+                  <option value="updated" selected></option>
+                  <option value="views">pm</option>
+                  
+                </select>            
+              </div>
           </div>
         </div>
-        <br>
+        <br><br><br>
 
         
 
