@@ -70,12 +70,28 @@
             <label class="govuk-label govuk-checkboxes__label" for="nationality">
               Attend all appointments arranged for you with a psychiatrist / psychologist / medical practitioner.
           </div>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
-              Receive home visits from [INSERT NAME] Mental Health Worker.
-            </label>
+          
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                Receive home visits from [INSERT NAME] Mental Health Worker.
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">
+                  Enter name
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+      
+            </div>
           </div>
+
+
+
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
             <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
@@ -83,6 +99,7 @@
 
             </label>
           </div>
+          
 
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
@@ -362,7 +379,7 @@
           </div>
 
 
-        </div><br><br>
+        </div><br>
         
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Supervision in the community by the supervising officer, or other responsible officer, or organisation
 
