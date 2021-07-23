@@ -53,10 +53,7 @@
             <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
             <label class="govuk-label govuk-checkboxes__label" for="nationality">
               Not to reside (not even to stay for one night) in the same household as [ANY / ANY FEMALE / ANY MALE] child under the age of [INSERT AGE] without the prior approval of your supervising officer
-
           </div>
-          
-          
 
           
         </div><br>
@@ -73,6 +70,13 @@
             <div class="govuk-form-group">
               <label class="govuk-label" for="contact-by-email">
                 Enter persons name
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-email">
+                Any child under the age of
               </label>
               <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
             </div>
@@ -109,7 +113,7 @@
             <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
               <div class="govuk-form-group">
                 <label class="govuk-label" for="contact-by-email">
-                  Enter name
+                  Enter Mental Health Worker's name
                 </label>
                 <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
               </div>
@@ -295,46 +299,7 @@
 
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Disclosure of information</h1>
           
-        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                Provide your supervising officer with details [SUCH AS MAKE, MODEL, COLOUR, REGISTRATION] of any vehicle you own, hire for more than a short journey or have regular use of, prior to any journey taking place.
-              </label>
-            </div>
-            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  Make
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-              </div>
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  Model
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-              </div>
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  Colour
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-              </div>
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  Registration
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-              </div>
-      
-            </div>
-           
-            
-          </div><br>
+        
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
             <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
@@ -443,22 +408,48 @@
           </div>
 
 
-        </div><br>
+        </div><br><br>
         
-        <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Supervision in the community by the supervising officer, or other responsible officer, or organisation
+        <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Supervision in the community by the supervising officer, or other responsible officer, or organisation</h1>
 
-        </h1>
 
-        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality">
-              Report to staff at [NAME OF APPROVED PREMISES / POLICE STATION] at [TIME / DAILY], unless otherwise authorised by your supervising officer.  This condition will be reviewed by your supervising officer on a [WEEKLY / MONTHLY / ETC] basis and may be amended or removed if it is felt that the level of risk you present has reduced appropriately.
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                Report to staff at [NAME OF APPROVED PREMISES / POLICE STATION] at [TIME / DAILY], unless otherwise authorised by your supervising officer.  This condition will be reviewed by your supervising officer on a [WEEKLY / MONTHLY / ETC] basis and may be amended or removed if it is felt that the level of risk you present has reduced appropriately.
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">
+                  Place
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
 
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">
+                  Time
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">
+                  Frequency
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+
+              
+      
+            </div>
+           
+            
           </div>
 
-          
-        </div><br><br>
+          <br><br>
 
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Restriction of specified conduct or specified acts
 
@@ -549,13 +540,32 @@
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Drug Testing Conditions
         </h1>
 
-        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality">
-              Attend [INSERT NAME AND ADDRESS], as reasonably required by your supervising officer, to give a sample of oral fluid / urine in order to test whether you have any specified Class A and specified Class B drugs in your body, for the purpose of ensuring that you are complying with the condition of your licence requiring you to be of good behaviour.
+        
 
-          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                Attend [INSERT NAME AND ADDRESS], as reasonably required by your supervising officer, to give a sample of oral fluid / urine in order to test whether you have any specified Class A and specified Class B drugs in your body, for the purpose of ensuring that you are complying with the condition of your licence requiring you to be of good behaviour.
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">
+                  Enter name
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">
+                  Enter address
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+      
+            </div>
+          </div><br>
 
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
