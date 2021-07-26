@@ -32,7 +32,7 @@
         </legend>
         <div id="nationality-hint" class="govuk-hint">
           Select all relevant conditions.
-        </div><br><br>
+        </div><br>
 
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Residence at a specific place </h1>
 
@@ -82,7 +82,7 @@
               </div><br><br>
 
               <label class="govuk-label govuk-radios__label" for="">
-            A child under the age of
+        Children under the age of
               </label><br><br>
                
             
@@ -106,7 +106,7 @@
           </div>
          
           
-        </div><br>
+        </div>
         
         <br>
 
@@ -324,7 +324,10 @@
 
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Disclosure of information</h1>
           
-        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+        
+           
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
               <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
@@ -333,31 +336,32 @@
             </div>
             <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
               <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  Make
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-              </div>
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      Make
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                      Model
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Colour
+                    </label>
+                  </div>
 
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  Model
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-              </div>
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  Colour
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-              </div>
-
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
-                  Registration
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Registration
+                    </label>
+                  </div>
               </div>
       
             </div>
