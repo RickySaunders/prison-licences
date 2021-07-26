@@ -142,11 +142,11 @@
             </div>
             <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
               <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
+                <label class="govuk-label" for="controlled-drug">
                   Date
                 </label>
                 <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"><br>
-                <br> <label class="govuk-label" for="contact-by-email">
+                <br> <label class="govuk-label" for="controlled-drug">
                   Time
                 </label>
                 <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
@@ -179,15 +179,10 @@
                     Postcode
                   </label>
                   <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
-              
-              
-      
+            
             </div>
           </div><br>
 
-          
-
-          
           
 
           <div class="govuk-checkboxes__item">
@@ -198,14 +193,41 @@
           </div>
 
 
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
-              Not to seek to approach or communicate with [INSERT NAME OF VICTIM AND / OR FAMILY MEMBERS] without the prior approval of your supervising officer and / or [INSERT NAME OF APPROPRIATE SOCIAL SERVICES DEPARTMENT].
+          
 
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                Not to seek to approach or communicate with [INSERT NAME OF VICTIM AND / OR FAMILY MEMBERS] without the prior approval of your supervising officer and / or [INSERT NAME OF APPROPRIATE SOCIAL SERVICES DEPARTMENT].
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+              <div class="govuk-form-group">
+        
+                
+                 <br> <label class="govuk-label" for="address-line-1">
+                  Enter name of victim or family members <span class="govuk-visually-hidden">line 1 of 2</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-line-2">
+                    <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-town">
+                    Or Social Services Department
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
 
-            </label>
-          </div>
+              
+              
+      
+            </div>
+          </div><br>
 
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
@@ -257,12 +279,33 @@
         </h1>
 
         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality">
-              To comply with any requirements specified by your supervising officer for the purpose of ensuring that you address your alcohol / drug / sexual / violent / gambling / solvent abuse / anger / debt / prolific / offending behaviour problems at the [NAME OF COURSE / CENTRE].
+          
 
-          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                To comply with any requirements specified by your supervising officer for the purpose of ensuring that you address your alcohol / drug / sexual / violent / gambling / solvent abuse / anger / debt / prolific / offending behaviour problems at the [NAME OF COURSE / CENTRE].
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+              
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-town">
+                    Name of course
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-county">
+                    Name of centre
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+              
+                
+            </div>
+          </div><br>
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
             <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
@@ -667,9 +710,6 @@
                     Postcode
                   </label>
                   <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
-              
-              
-      
             </div>
           </div><br>
 
