@@ -139,7 +139,7 @@
             </div>
             <div class="govuk-checkboxes__conditional" id="appointment-conditional">
               <div class="govuk-form-group">
-                <label class="govuk-label" for="">
+                <label class="govuk-label" for="date">
                   Date
                 </label>
                 <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"><br>
@@ -182,24 +182,22 @@
 
           
 
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="reside" name="reside" type="checkbox" value="reside" data-aria-controls="reside-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="reside">
               Should you return to the UK and Islands before the expiry date of your licence then your licence conditions will be in force and you must report within two working days to your supervising officer.
             </label>
           </div>
 
-
-          
-
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+              <input class="govuk-checkboxes__input" id="unsupervised" name="unsupervised" type="checkbox" value="male" data-aria-controls="unsupervised-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="unsupervised">
                 Not to have unsupervised contact with [ANY / ANY FEMALE / ANY MALE] children under the age of [INSERT AGE] without the prior approval of your supervising officer and / or [INSERT NAME OF APPROPRIATE SOCIAL SERVICES DEPARTMENT] except where that contact is inadvertent and not reasonably avoidable in the course of lawful daily life.
               </label>
             </div>
-            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+            <div class="govuk-checkboxes__conditional" id="unsupervised-conditional">
               <div class="govuk-form-group">
         
                 
@@ -254,28 +252,28 @@
           
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+              <input class="govuk-checkboxes__input" id="reside" name="reside" type="checkbox" value="email" data-aria-controls="reside-conditional">
               <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
                 Not to reside (not even to stay for one night) in the same household as [ANY / ANY FEMALE / ANY MALE] child under the age of [INSERT AGE] without the prior approval of your supervising officer
               </label>
             </div>
-            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+            <div class="govuk-checkboxes__conditional" id="reside-conditional">
               <div class="govuk-form-group">
                 <div class="govuk-radios">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="male">
                     <label class="govuk-label govuk-radios__label" for="where-do-you-live">
                       Any male
                     </label>
                   </div>
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                    <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="female">
                     <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
                       Any female
                     </label>
                   </div>
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                    <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="both">
                     <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
                       Any male or female
                     </label>
@@ -309,14 +307,34 @@
           
           <br>
 
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
-              Not to contact or associate with [NAMED OFFENDER(S) / NAMED INDIVIDUAL(S)] without the prior approval of your supervising officer.
+          
 
-
-            </label>
-          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="offender" name="offender" type="checkbox" value="email" data-aria-controls="offender-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="offender-conditional">
+                Not to contact or associate with [NAMED OFFENDER(S) / NAMED INDIVIDUAL(S)] without the prior approval of your supervising officer 
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="offender-conditional">
+              
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-town">
+                    Name of offenders
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-county">
+                    Name of individual
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+              
+                
+            </div>
+          </div><br>
+          
 
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
