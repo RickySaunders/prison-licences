@@ -305,9 +305,7 @@
             
           </div>
           
-          <br>
-
-          
+          <br> 
 
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
@@ -395,17 +393,27 @@
                 
             </div>
           </div><br>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
-              Not to undertake work or other organised activity which will involve a person under the age of [INSERT AGE], either on a paid or unpaid basis without the prior approval of your supervising officer;
-
-              
-            </label>
-          </div>
           
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="under-age" name="under-age" type="checkbox" value="email" data-aria-controls="under-age-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="under-age-conditional">
+                Not to undertake work or other organised activity which will involve a person under the age of [INSERT AGE], either on a paid or unpaid basis without the prior approval of your supervising officer;
 
-          <br>
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="under-age-conditional">
+              
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-town">
+                    Enter age
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+            
+                
+            </div>
+          </div><br>
 
         <br>
 
