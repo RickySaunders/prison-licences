@@ -235,47 +235,52 @@
             </div>
             <div class="govuk-checkboxes__conditional" id="unsupervised-conditional">
               <div class="govuk-form-group">
-        
-                
-                <div class="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-                    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                      Any male child
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                      Any female child
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
-                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-                      Any male or female child
-                    </label>
-                  </div>
+              <div class="govuk-radios">
+                <label class="govuk-label" for="controlled-drug">
+                  Select the relevant text
+                </label>
+              <br>
+                <div class="govuk-radios__item">
                   
-                </div><br><br>
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    any
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    any female
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                    any male
+                  </label>
+                </div>
+                
+              </div><br><br><br>
 
-                <label class="govuk-label govuk-radios__label" for="">
-                  Under the age of
-                        </label><br><br>
-                      <div class="govuk-radios govuk-radios--inline">
-                        <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                          <label class="govuk-label govuk-radios__label" for="changed-name">
-                            16 years
-                          </label>
-                        </div>
-                        <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                          <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                            18 years
-                          </label>
-                        </div>
-                      </div><br>
+              <label class="govuk-label" for="controlled-drug">
+                Select the relevant age
+              </label>
+            <br>
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  16 years
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  18 years
+                </label>
+              </div>
+              </div><br><br>
+          
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="address-town">
                     Or Social Services Department
@@ -283,58 +288,64 @@
                   <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
 
             </div>
-          </div><br>
+          </div>
 
           
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="reside" name="reside" type="checkbox" value="email" data-aria-controls="reside-conditional">
               <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                Not to reside (not even to stay for one night) in the same household as [ANY / ANY FEMALE / ANY MALE] child under the age of [INSERT AGE] without the prior approval of your supervising officer
+                Not to reside (not even to stay for one night) in the same household as [ANY / ANY FEMALE / ANY MALE] child under the age of [INSERT AGE] without the prior approval of your supervising officer.
               </label>
             </div>
             <div class="govuk-checkboxes__conditional" id="reside-conditional">
               <div class="govuk-form-group">
-                <div class="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="male">
-                    <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                      Any male
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="female">
-                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                      Any female
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="both">
-                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-                      Any male or female
-                    </label>
-                  </div>
+              <div class="govuk-radios">
+                <label class="govuk-label" for="controlled-drug">
+                  Select the relevant text
+                </label>
+              <br>
+                <div class="govuk-radios__item">
                   
-                </div><br><br>
-  
-                <label class="govuk-label govuk-radios__label" for="">
-          Under the age of
-                </label><br><br>
-              <div class="govuk-radios govuk-radios--inline">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="changed-name">
-                    16 years
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    any
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                    18 years
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    any female
                   </label>
                 </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                    any male
+                  </label>
+                </div>
+                
+              </div><br><br><br>
+
+              <label class="govuk-label" for="controlled-drug">
+                Select the relevant age
+              </label>
+            <br>
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  16 years
+                </label>
               </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  18 years
+                </label>
               </div>
+            </div>
+            </div>
       
             </div>
            </div>
