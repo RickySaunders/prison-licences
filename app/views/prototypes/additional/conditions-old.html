@@ -37,14 +37,31 @@
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Residence at a specific place </h1>
 
         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality">
-              You must reside within [INSERT REGION] while of no fixed abode, unless otherwise approved by your supervising officer.
-            </label>
-          </div>
+         
+          
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="own" name="own" type="checkbox" value="email" data-aria-controls="own-conditional">
+                <label class="govuk-label govuk-checkboxes__label" for="own-conditional">
+                  You must reside within [INSERT REGION] while of no fixed abode, unless otherwise approved by your supervising officer.
+              </label>
             </div>
-            <br><br>
+            <div class="govuk-checkboxes__conditional" id="own-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">
+                  Enter region
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              </div>
+      
+            </div>
+           
+            
+          </div><br>
+            
+            
+            
+            <br>
      
       
             <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Restriction of residency</h1>
@@ -122,17 +139,30 @@
             <label class="govuk-label govuk-checkboxes__label" for="nationality">
               Attend all appointments arranged for you with a psychiatrist / psychologist / medical practitioner.
           </div>
-          
+    
+           
+          </div><br>
+
 
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+              <input class="govuk-checkboxes__input" id="mentalhealth" name="mentalhealth" type="checkbox" value="email" data-aria-controls="mentalhealth-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="mentalhealth-conditional">
                 Receive home visits from [INSERT NAME] Mental Health Worker.
+            </label>
+          </div>
+          <div class="govuk-checkboxes__conditional" id="mentalhealth-conditional">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-email">
+                Enter name
               </label>
+              <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
             </div>
-           
-          </div><br>
+    
+          </div>
+         
+          
+        </div><br>
 
 
 
