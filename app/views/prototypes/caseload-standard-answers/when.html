@@ -23,39 +23,40 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
       
-  
+    <form action="answers-check" method="post" class="form">
+
         
-        <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-              <h1 class="govuk-fieldset__heading">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="vehicle-features-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h1 class="govuk-fieldset__heading">
                 When does Adam Balasaravika need to go to their induction appointment?
               </h1>
             </legend><br>
-            <div id="passport-issued-hint" class="govuk-hint">
+            <div id="when-hint" class="govuk-hint">
               For example, 12 11 2007
             </div>
-            <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input" id="when-day">
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  <label class="govuk-label govuk-date-input__label" for="when-day">
                     Day
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-day" name="when-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
               </div>
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  <label class="govuk-label govuk-date-input__label" for="when-month">
                     Month
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-month" name="when-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
               </div>
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
-                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  <label class="govuk-label govuk-date-input__label" for="when-year">
                     Year
                   </label>
-                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-year" name="when-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
               </div>
             </div><br><br>
         
@@ -68,27 +69,27 @@
             </label>
             
 
-          <div id="passport-issued-hint" class="govuk-hint">
+          <div id="time-hint" class="govuk-hint">
             For example, 9:30am or 2:55pm
           </div>
-          <div class="govuk-date-input" id="passport-issued">
+          <div class="govuk-date-input" id="when-time">
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                <label class="govuk-label govuk-date-input__label" for="when-hour">
                   Hour
                 </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-hour" name="when-hour" type="text" pattern="[0-9]*" inputmode="numeric"></div>
             </div>
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                <label class="govuk-label govuk-date-input__label" for="when-minute">
                   Minute
                 </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-minute" name="when-minute" type="text" pattern="[0-9]*" inputmode="numeric"></div>
             </div>
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                <label class="govuk-label govuk-date-input__label" for="when-am">
                   am or pm
                 </label>
                 <select class="govuk-select" id="sort" name="sort">
@@ -100,16 +101,14 @@
               </div>
           </div>
         </div>
-        <br><br><br>
+        <br><br>
 
         
 
-          <a href="answers-check" class="govuk-button show-continue" style="display: inline;">
-      Continue
-    </a>
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
   </fieldset>
 </div>
-       
+</form>  
  </div>
 </div>
         

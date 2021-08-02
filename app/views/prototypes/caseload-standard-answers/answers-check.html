@@ -68,14 +68,14 @@
              Address
             </dt>
             <dd class="govuk-summary-list__value">
-               Probation Office<br>
-              20 Oxford Street<br>
-              Wellingborough<br>
-              Northamptonshire<br>
-              NN8 4HY
+              {{ data['address'] }}<br>
+              {{ data['address-line-2'] }}<br>
+              {{ data['address-town'] }}<br>
+              {{ data['address-county'] }}<br>
+              {{ data['address-postcode'] }}<br>
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
+              <a class="govuk-link" href="address">
                 Change<span class="govuk-visually-hidden"> licence type</span>
               </a>
             </dd>
@@ -100,7 +100,7 @@
               Date
             </dt>
             <dd class="govuk-summary-list__value">
-              31 May 2023
+              {{ data['when-day'] }} : {{ data['when-month'] }} : {{ data['when-year'] }}
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
@@ -114,7 +114,7 @@
               Time
             </dt>
             <dd class="govuk-summary-list__value">
-              5:30pm
+              {{ data['when-hour'] }} : {{ data['when-minute'] }}{{ data['when-am'] }}<br>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
