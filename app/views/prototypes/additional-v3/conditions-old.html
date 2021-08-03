@@ -148,21 +148,12 @@
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="mentalhealth" name="mentalhealth" type="checkbox" value="email" data-aria-controls="mentalhealth-conditional">
               <label class="govuk-label govuk-checkboxes__label" for="mentalhealth-conditional">
-                Receive home visits from [INSERT NAME] Mental Health Worker.
+                Receive home visits from a Mental Health Worker.
             </label>
-          </div>
-          <div class="govuk-checkboxes__conditional" id="mentalhealth-conditional">
-            <div class="govuk-form-group">
-              <label class="govuk-label" for="contact-by-email">
-                Enter name
-              </label>
-              <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-            </div>
-    
           </div>
          
           
-        </div><br>
+        <br>
 
 
 
@@ -225,6 +216,32 @@
 
             </label>
           </div>
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="seek" name="seek" type="checkbox" value="email" data-aria-controls="seek-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="seek-conditional">
+                Not to seek to approach or communicate with [INSERT NAME OF VICTIM AND / OR FAMILY MEMBERS] without the prior approval of your supervising officer and / or [INSERT NAME OF APPROPRIATE SOCIAL SERVICES DEPARTMENT].
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="seek-conditional">
+              
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-town">
+                    Enter name of victim or family member
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-county">
+                    Enter social services department
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+              
+                
+            </div>
+          </div><br>
 
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
@@ -366,13 +383,13 @@
               
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="address-town">
-                    Name of offenders
+                    Enter name of offender or individual
                   </label>
                   <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
               
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="address-county">
-                    Name of individual
+                    
                   </label>
                   <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
               
