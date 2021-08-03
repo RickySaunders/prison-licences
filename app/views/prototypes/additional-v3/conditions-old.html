@@ -377,28 +377,10 @@
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
               <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                To comply with any requirements specified by your supervising officer for the purpose of ensuring that you address your alcohol / drug / sexual / violent / gambling / solvent abuse / anger / debt / prolific / offending behaviour problems at the [NAME OF COURSE / CENTRE].
+                To comply with any requirements specified by your supervising officer for the purpose of ensuring that you address your alcohol / drug / sexual / violent / gambling / solvent abuse / anger / debt / prolific / offending behaviour problems.
               </label>
             </div>
-            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
-              
-              
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="address-town">
-                    Name of course
-                  </label>
-                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
-              
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="address-county">
-                    Name of centre
-                  </label>
-                  <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
-              
-                
-            </div>
-          </div><br>
-          
+            
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="under-age" name="under-age" type="checkbox" value="email" data-aria-controls="under-age-conditional">
@@ -412,7 +394,7 @@
               
                 <div class="govuk-form-group">
                   <label class="govuk-label" for="address-town">
-                    Enter age
+                    Select the relevant age
                   </label><br>
                   <div class="govuk-radios govuk-radios--inline">
                     <div class="govuk-radios__item">
@@ -530,42 +512,9 @@
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
               <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                Provide your supervising officer with details [SUCH AS MAKE, MODEL, COLOUR, REGISTRATION] of any vehicle you own, hire for more than a short journey or have regular use of, prior to any journey taking place.
+                Provide your supervising officer with details (such as make, model, colour, registration) of any vehicle you own, hire for more than a short journey or have regular use of, prior to any journey taking place.
               </label>
             </div>
-            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
-              <div class="govuk-form-group">
-                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Make
-                    </label>
-                  </div>
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                      Model
-                    </label>
-                  </div>
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                      Colour
-                    </label>
-                  </div>
-
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                      Registration
-                    </label>
-                  </div>
-              </div>
-      
-            </div>
-           
-            
           </div><br>
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
@@ -608,25 +557,207 @@
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Curfew arrangement
         </h1>
 
+        
         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality">
-              Confine yourself to an address approved by your supervising officer between the hours of [TIME] and [TIME] daily unless otherwise authorised by your supervising officer.  This condition will be reviewed by your supervising officer on a [WEEKLY / MONTHLY / ETC] basis and may be amended or removed if it is felt that the level of risk that you present has reduced appropriately.
+            <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+              Confine yourself to an address approved by your supervising officer between the hours of [TIME] and [TIME] daily unless otherwise authorised by your supervising officer. This condition will be reviewed by your supervising officer on a [WEEKLY / MONTHLY / ETC] basis and may be amended or removed if it is felt that the level of risk that you present has reduced appropriately.
+            </label>
+          </div><br>
+          <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+            <div class="govuk-form-group">
+              <div class="time-picker">
+                <label class="govuk-label" for="Time">
+                Enter the curfew start time
+                </label>
+            
+              <div id="passport-issued-hint" class="govuk-hint">
+                For example, 9:30am or 2:55pm
+              </div>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                      Hour
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Minute
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      am or pm
+                    </label>
+                    <select class="govuk-select" id="when-am" name="when-am">
+                      <option value="am" selected>am</option>
+                      <option value="pm">pm</option>
+                      
+                    </select>             
+                  </div>
+              </div>
+            </div>
+                
+              </div><br><br><br>
+  
+              <label class="govuk-label" for="controlled-drug">
+                Enter the curfew end time
+              </label>
+              <div class="govuk-form-group">
+                <div class="time-picker">
+                  
+                <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        Hour
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Minute
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        am or pm
+                      </label>
+                      <select class="govuk-select" id="when-am" name="when-am">
+                        <option value="am" selected>am</option>
+                        <option value="pm">pm</option>
+                        
+                      </select>             
+                    </div>
+                </div><br><br><br>
 
-            </label>      
-
+                
+                  <div class="govuk-form-group"></div>
+                    <label class="govuk-label" for="contact-by-email">
+                      Enter the review period
+                    </label>
+                    <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+                  </div>
+          
+ 
+                  
+                </div>
+            </div>
+    
           </div>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
-              Confine yourself to remain at [CURFEW ADDRESS] initially from [START OF CURFEW HOURS] until [END OF CURFEW HOURS] each day, and, thereafter, for such a period as may be reasonably notified to you by your supervising officer; and comply with such arrangements as may be reasonably put in place and notified to you by your supervising officer so as to allow for your whereabouts and your compliance with your curfew requirement be monitored [WHETHER BY ELECTRONIC MEANS INVOLVING YOUR WEARING AN ELECTRONIC TAG OR OTHERWISE].
+         
+          
+        </div>
+        
+
+      <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+          <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+            Confine yourself to remain at [CURFEW ADDRESS] initially from [START OF CURFEW HOURS] until [END OF CURFEW HOURS] each day, and, thereafter, for such a period as may be reasonably notified to you by your supervising officer; and comply with such arrangements as may be reasonably put in place and notified to you by your supervising officer so as to allow for your whereabouts and your compliance with your curfew requirement be monitored (whether by electronic means involving your wearing an electronic tag or otherwise).
+          </label>
+        </div><br>
+        <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+          <div class="govuk-form-group">
+            <div class="time-picker">
+              <label class="govuk-label" for="Time">
+              Enter the curfew start time
+              </label>
+          
+            <div id="passport-issued-hint" class="govuk-hint">
+              For example, 9:30am or 2:55pm
+            </div>
+            <div class="govuk-date-input" id="passport-issued">
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                    Hour
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                    Minute
+                  </label>
+                  <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+              </div>
+              <div class="govuk-date-input__item">
+                <div class="govuk-form-group">
+                  <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                    am or pm
+                  </label>
+                  <select class="govuk-select" id="when-am" name="when-am">
+                    <option value="am" selected>am</option>
+                    <option value="pm">pm</option>
+                    
+                  </select>             
+                </div>
+            </div>
+          </div>
+              
+            </div><br><br><br>
+
+            <label class="govuk-label" for="controlled-drug">
+              Enter the curfew end time
+            </label>
+            <div class="govuk-form-group">
+              <div class="time-picker">
+                
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                      Hour
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Minute
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      am or pm
+                    </label>
+                    <select class="govuk-select" id="when-am" name="when-am">
+                      <option value="am" selected>am</option>
+                      <option value="pm">pm</option>
+                      
+                    </select>             
+                  </div>
+              </div><br><br><br>
 
               
-            </label>
-          </div>
+                <div class="govuk-form-group"></div>
+                  <label class="govuk-label" for="contact-by-email">
+                    Enter the review period
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+                </div>
         
-        <br>
+
+                
+              </div>
+          </div>
+  
+        </div>
+       
+        
+      </div>
 
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Freedom of movement 
         </h1>
