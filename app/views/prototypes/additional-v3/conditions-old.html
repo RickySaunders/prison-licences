@@ -841,16 +841,77 @@
 
         </h1>
 
+
         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality">
-              Report to staff at [NAME OF APPROVED PREMISES / POLICE STATION] at [TIME / DAILY], unless otherwise authorised by your supervising officer.  This condition will be reviewed by your supervising officer on a [WEEKLY / MONTHLY / ETC] basis and may be amended or removed if it is felt that the level of risk you present has reduced appropriately.
+            <input class="govuk-checkboxes__input" id="report-address" name="report-address" type="checkbox" value="email" data-aria-controls="report-address-conditional">
+            <label class="govuk-label govuk-checkboxes__label" for="report-address-conditional">
+              Report to staff at [NAME OF APPROVED PREMISES / POLICE STATION] at [TIME / DAILY], unless otherwise authorised by your supervising officer. This condition will be reviewed by your supervising officer on a [WEEKLY / MONTHLY / ETC] basis and may be amended or removed if it is felt that the level of risk you present has reduced appropriately.
+          </label>
+        </div><br>
+        <div class="govuk-checkboxes__conditional" id="report-address-conditional">
+          <div class="govuk-form-group">
 
+            
+
+            <div class="govuk-form-group"></div>
+                    <label class="govuk-label" for="police">
+                      Enter name of approved premises or police station
+                    </label>
+                    <input class="govuk-input govuk-!-width-one-third" id="police" name="police" type="email" spellcheck="false">
+                  </div><br>
+                  <label class="govuk-label" for="contact-by-email">
+                    Enter address
+                  </label><br>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-1">
+                      Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+                    </label>
+                    <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1"></div>
+                
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-line-2">
+                      <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                    </label>
+                    <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2"></div>
+                
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-town">
+                      Town or city
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+                
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-county">
+                      County
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+                
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="address-postcode">
+                      Postcode
+                    </label>
+                    <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
+<br><br>
+                    <div class="govuk-form-group"></div>
+                    <label class="govuk-label" for="contact-by-email">
+                      Enter the review period
+                    </label>
+                    <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+                  </div>
+
+
+                
+                </div><br>
+
+                
+              </div>
           </div>
+        </div>
+       
+     
 
-          
-        </div><br><br>
+        
 
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Restriction of specified conduct or specified acts
 
@@ -1003,15 +1064,111 @@
 
           <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Electronic monitoring
           </h1>
-  
+
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality">
-                Allow person(s) as designated by your supervising officer to install an electronic monitoring tag on you and access to install any associated equipment in your property, and for the purpose of ensuring that equipment is functioning correctly. You must not damage or tamper with these devices and ensure that the tag is charged, and report to your supervising officer and the EM provider immediately if the tag or the associated equipment are not working correctly. This will be for the purpose of monitoring your [INSERT TYPES OF CONDITIONS TO BE ELECTRONICALLY MONITORED HERE] licence condition(s).
-  
+              <input class="govuk-checkboxes__input" id="electronic" name="electronic" type="checkbox" value="email" data-aria-controls="electronic-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="electronic-conditional">
+                Allow person(s) as designated by your supervising officer to install an electronic monitoring tag on you and access to install any associated equipment in your property, and for the purpose of ensuring that equipment is functioning correctly. You must not damage or tamper with these devices and ensure that the tag is charged, and report to your supervising officer and the EM provider immediately if the tag or the associated equipment are not working correctly. This will be for the purpose of monitoring your [INSERT TYPES OF CONDITIONS TO BE ELECTRONICALLY MONITORED HERE] licence condition(s) unless otherwise authorised by your supervising officer.
+            </label>
+          </div><br>
+          <div class="govuk-checkboxes__conditional" id="electronic-conditional">
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="electronic-hint">
+                
+                <div id="electronic-hint" class="govuk-hint">
+                  Select all that apply.
+                </div>
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      Residence at a specific place
+                    </label>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      Restriction of residency
+
+                    </label>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      Making or maintaining contact with a person
+                    </label>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      Participation in, or co-operation with, a programme or set of activities
+                    </label>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      Possession, ownership, control or inspection of specified items or documents
+                    </label>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      Disclosure of information
+                    </label>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste">
+                      Curfew arrangement
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                      Freedom of movement
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Supervision in the community by the supervising officer, or other responsible officer, or organisation
+                    </label>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Restriction of specified conduct or specified acts
+                    </label>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Extremism
+                    </label>
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Drug testing
+                    </label>
+                  </div>
+              </fieldset><br>
+            </div>    
+                  
             </div>
           </div>
+  
+          
 
   
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
