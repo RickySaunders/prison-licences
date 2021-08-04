@@ -844,12 +844,12 @@
 
         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="group" name="group" type="checkbox" value="email" data-aria-controls="group-conditional">
-            <label class="govuk-label govuk-checkboxes__label" for="group-conditional">
+            <input class="govuk-checkboxes__input" id="map" name="map" type="checkbox" value="email" data-aria-controls="map-conditional">
+            <label class="govuk-label govuk-checkboxes__label" for="map-conditional">
               Not to enter the area of [CLEARLY SPECIFIED AREA], as defined by the attached map without the prior approval of your supervising officer.
           </label>
         </div>
-        <div class="govuk-checkboxes__conditional" id="group-conditional">
+        <div class="govuk-checkboxes__conditional" id="map-conditional">
           <div class="govuk-form-group">
             <label class="govuk-label" for="contact-by-email">
               Enter the name of area shown on the map
@@ -858,26 +858,77 @@
           </div>
   
         </div>
-        
-        </div>
-
-        
+       
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+            <input class="govuk-checkboxes__input" id="enter" name="enter" type="checkbox" value="enter" data-aria-controls="enter-conditional">
+            <label class="govuk-label govuk-checkboxes__label" for="enter">
               Not to enter [NAME/TYPE OF PREMISES / ADDRESS / ROAD] without the prior approval of your supervising officer.
-
-              
-              
             </label>
           </div>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
-              Not to enter or remain in sight of any [CHILDREN’S PLAY AREA, SWIMMING BATHS, SCHOOL ETC] without the prior approval of your supervising officer.  
+          
+        
+          <div class="govuk-checkboxes__conditional" id="enter-conditional">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="enter">
+                Enter name or type or premises
+              </label>
+              
+              <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              
+              <br><br><br>
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="enter-address">
+                  Enter address
+                </label>
+                <label class="govuk-label" for="address-line-1">
+                  Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+                </label>
+                <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1"></div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-line-2">
+                  <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                </label>
+                <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2"></div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-town">
+                  Town or city
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-county">
+                  County
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+            
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="address-postcode">
+                  Postcode
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
+          
+          </div>
+        </div>
+        
 
-
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="play-area" name="play-area" type="checkbox" value="email" data-aria-controls="play-area-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="play-area-conditional">
+                Not to enter or remain in sight of any [CHILDREN’S PLAY AREA, SWIMMING BATHS, SCHOOL ETC] without the prior approval of your supervising officer.
             </label>
+          </div>
+          <div class="govuk-checkboxes__conditional" id="play-area-conditional">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-email">
+                Enter area or type of premises 
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+            </div>
+    
           </div>
 
           <div class="govuk-checkboxes__item">
