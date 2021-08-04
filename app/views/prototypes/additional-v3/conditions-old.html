@@ -38,7 +38,6 @@
 
         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
          
-          
             <div class="govuk-checkboxes" data-module="govuk-checkboxes">
               <div class="govuk-checkboxes__item">
                 <input class="govuk-checkboxes__input" id="own" name="own" type="checkbox" value="email" data-aria-controls="own-conditional">
@@ -364,13 +363,23 @@
 
             </label>
           </div>
-
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
-              Not to associate with any person currently or formerly associated with [NAME OF DESCRIBE SPECIFIC GROUPS OR ORGANISATIONS] without the prior approval of your supervising officer.
-
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="group" name="group" type="checkbox" value="email" data-aria-controls="group-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="group-conditional">
+                Not to associate with any person currently or formerly associated with [NAME OF DESCRIBE SPECIFIC GROUPS OR ORGANISATIONS] without the prior approval of your supervising officer.
             </label>
+          </div>
+          <div class="govuk-checkboxes__conditional" id="group-conditional">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-email">
+                Enter name of group or organisation
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+            </div>
+    
+          </div>
+          
           </div>
         </div><br><br>
 
