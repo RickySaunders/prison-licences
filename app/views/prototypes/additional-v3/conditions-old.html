@@ -1274,60 +1274,56 @@
                       Drug testing
                     </label>
                   </div>
-              </fieldset><br>
+              </fieldset>
             </div>    
                   
             </div>
           </div>
-  
-          
-
-  
-          
           </div>
+
+
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="curfew" name="curfew" type="checkbox" value="email" data-aria-controls="curfew-conditional">
+            <input class="govuk-checkboxes__input" id="monitoring" name="monitoring" type="checkbox" value="email" data-aria-controls="monitoring-conditional">
             <label class="govuk-label govuk-checkboxes__label" for="curfew-conditional">
               You will be subject to trail monitoring. Your whereabouts will be electronically monitored by GPS Satellite Tagging for a period of [INSERT TIMEFRAME] ending on [INSERT END DATE] and you must cooperate with the monitoring as directed by your supervising officer unless otherwise authorised by your supervising officer.
             </label>
           </div><br>
-          <div class="govuk-checkboxes__conditional" id="curfew-conditional">
+          <div class="govuk-checkboxes__conditional" id="monitoring-conditional">
             <div class="govuk-form-group">
               
               <div class="time-picker">
-                <label class="govuk-label" for="Time">
+                <label class="govuk-label" for="monitoring">
                 Enter start date
                 </label>
-            
               
               <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                <fieldset class="govuk-fieldset" role="group" aria-describedby="monitoring-hint">
                   
-                  <div id="passport-issued-hint" class="govuk-hint">
+                  <div id="start-hint" class="govuk-hint">
                     For example, 12 11 2007
                   </div>
-                  <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input" id="monitoring">
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        <label class="govuk-label govuk-date-input__label" for="monitoring-day">
                           Day
                         </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="monitoring-day" name="monitoring-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        <label class="govuk-label govuk-date-input__label" for="monitoring-month">
                           Month
                         </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="monitoring-month" name="monitoring-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
                     </div>
                     <div class="govuk-date-input__item">
                       <div class="govuk-form-group">
-                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        <label class="govuk-label govuk-date-input__label" for="monitoring-year">
                           Year
                         </label>
-                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="monitoring-year" name="monitoring-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
                     </div>
                   </div>
               
@@ -1335,7 +1331,7 @@
               </div>
             </div>
                 
-              </div><br><br>
+              </div><br>
   
               <div class="time-picker">
                 <label class="govuk-label" for="Time">
@@ -1367,35 +1363,151 @@
                       <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
                   </div>
                 </div>
-
-                
-                  
- 
                   
                 </div>
-            </div>
-    
+              </div>
           </div>
          
-          
         </div>
+          
+
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality">
-                You must stay at [approved address] between 5pm and midnight every day until your electronic tag is installed.
+              <input class="govuk-checkboxes__input" id="approved" name="approved" type="checkbox" value="approved" data-aria-controls="approved-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="approved">
+                You must stay at [approved address] between 5pm and midnight every day until your electronic tag is installed unless otherwise authorised by your supervising officer.
+              </label>
+            </div>
+            
+          <br>
+            <div class="govuk-checkboxes__conditional" id="approved-conditional">
+              <div class="govuk-form-group">
+                
+                
+                  <label class="govuk-label" for="approved">
+                    Enter approved address
+                  </label>
+                  <label class="govuk-label" for="address-line-1">
+                    Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-line-2">
+                    <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-town">
+                    Town or city
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-county">
+                    County
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-postcode">
+                    Postcode
+                  </label>
+                  <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
+            
             </div>
           </div>
 
-          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality">
-                You are subject to alcohol monitoring. Your alcohol intake will be electronically monitoring for a period of [INSERT TIMEFRAME AND END DATE], and you may not consume units of alcohol, unless otherwise permitted by your supervising officer. 
+          
 
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="alcohol" name="alcohol" type="checkbox" value="email" data-aria-controls="alcohol-conditional">
+            <label class="govuk-label govuk-checkboxes__label" for="curfew-conditional">
+              You are subject to alcohol monitoring. Your alcohol intake will be electronically monitoring for a period of [INSERT TIMEFRAME AND END DATE], and you may not consume units of alcohol, unless otherwise permitted by your supervising officer. 
+            </label>
+          </div><br>
+          <div class="govuk-checkboxes__conditional" id="alcohol-conditional">
+            <div class="govuk-form-group">
+              
+              <div class="time-picker">
+                <label class="govuk-label" for="alcohol">
+                Enter start date
+                </label>
+              
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" role="group" aria-describedby="alcohol-hint">
+                  
+                  <div id="start-hint" class="govuk-hint">
+                    For example, 12 11 2007
+                  </div>
+                  <div class="govuk-date-input" id="monitoring">
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="alcohol-day">
+                          Day
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="monitoring-day" name="alcohol-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="alcohol-month">
+                          Month
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="monitoring-month" name="alcohol-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="alcohol-year">
+                          Year
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="alcohol-year" name="alcohol-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                  </div>
+              
+                </fieldset>
+              </div>
+            </div>
+                
+              </div><br>
   
-            </div>
+              <div class="time-picker">
+                <label class="govuk-label" for="Time">
+                Enter end date
+                </label>
+              <div class="govuk-form-group">
+                <div class="time-picker">
+                  
+                  <div class="govuk-date-input" id="passport-issued">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                        Day
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                  </div>
+                </div>
+                  
+                </div>
+              </div>
           </div>
+         
+        </div>
 
           
         </div>
@@ -1403,7 +1515,7 @@
         <br>
 
       </fieldset>
-    </div><br>
+    </div>
 
 
           <a href="bespoke" class="govuk-button show-continue" style="display: inline;">
