@@ -531,14 +531,46 @@
               </label>
             </div>
           </div><br>
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
-              Notify your supervising officer of any developing intimate relationships with [WOMEN / MEN / WOMEN OR MEN].
+          
 
-              
-              
-            </label>
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="men" name="men" type="checkbox" value="male" data-aria-controls="men-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="men">
+                Notify your supervising officer of any developing intimate relationships with [WOMEN / MEN / WOMEN OR MEN].
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="men-conditional">
+              <div class="govuk-form-group">
+              <div class="govuk-radios">
+                <label class="govuk-label" for="men">
+                  Select the relevant text
+                </label>
+              <br>
+                <div class="govuk-radios__item">
+                  
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    any women
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    any men
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                    any women or men
+                  </label>
+                </div>
+                
+              </div><br>
+
+            </div>
           </div>
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
