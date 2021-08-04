@@ -844,12 +844,24 @@
 
         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
-            <label class="govuk-label govuk-checkboxes__label" for="nationality">
+            <input class="govuk-checkboxes__input" id="group" name="group" type="checkbox" value="email" data-aria-controls="group-conditional">
+            <label class="govuk-label govuk-checkboxes__label" for="group-conditional">
               Not to enter the area of [CLEARLY SPECIFIED AREA], as defined by the attached map without the prior approval of your supervising officer.
-
-
+          </label>
+        </div>
+        <div class="govuk-checkboxes__conditional" id="group-conditional">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="contact-by-email">
+              Enter the name of area shown on the map
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
           </div>
+  
+        </div>
+        
+        </div>
+
+        
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
             <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
