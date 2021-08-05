@@ -37,16 +37,16 @@
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id=""> Drug appointment</h1>
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="appointment" name="appointment" type="checkbox" value="controlled drug" data-aria-controls="appointment-conditional">
-              <label class="govuk-label govuk-checkboxes__label" for="appointment">
+              <input class="govuk-checkboxes__input" id="pss-appointment" name="pss-appointment" type="checkbox" value="pss-appointment" data-aria-controls="pss-appointment-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="pss-appointment">
                 Attend [INSERT APPOINTMENT TIME DATE AND ADDRESS], as directed, to address your dependency on, or propensity to misuse, a controlled drug.
               </label>
             </div>
             
           <br>
-            <div class="govuk-checkboxes__conditional" id="appointment-conditional">
+            <div class="govuk-checkboxes__conditional" id="pss-appointment-conditional">
               <div class="govuk-form-group">
-                <label class="govuk-label" for="controlled-drug">
+                <label class="govuk-label" for="time">
                   Enter time and date
                 </label>
                 <label class="govuk-label" for="date">
@@ -60,7 +60,7 @@
                 
                 <br><br><br>
                 <div class="govuk-form-group">
-                  <label class="govuk-label" for="controlled-drug">
+                  <label class="govuk-label" for="address">
                     Enter address
                   </label>
                   <label class="govuk-label" for="address-line-1">
@@ -94,27 +94,21 @@
             
             </div>
           </div>
-
-        
-          
         
 
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Drug testing
         </h1>
 
-        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-          
-
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+              <input class="govuk-checkboxes__input" id="pss-test" name="pss-test" type="checkbox" value="pss-test" data-aria-controls="pss-test-conditional">
               <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
                 Attend [INSERT NAME AND ADDRESS], as reasonably required by your supervisor, to give a sample of oral fluid / urine in order to test whether you have any specified Class A or specified Class B drugs in your body, for the purpose of ensuring that you are complying with the requirement of your supervision period requiring you to be of good behaviour.
               </label>
             </div>
-            <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+            <div class="govuk-checkboxes__conditional" id="pss-test-conditional">
               <div class="govuk-form-group">
-                <label class="govuk-label" for="contact-by-email">
+                <label class="govuk-label" for="name">
                   Enter name
                 </label>
                 <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
