@@ -20,38 +20,66 @@
   <span class="govuk-caption-m">Adam Balasaravika
   </span></h1>
 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds-from-desktop">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
 
         <h1 class="govuk-heading-l">Check your answers</h1><br>
 
-        <h2 class="govuk-heading-m">Licence conditions details</h2>
 
+        <h2 class="govuk-heading-m"> Additional licence condition details
+        </h2>
+
+        
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Additional and bespoke conditions
+              Additional conditions
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"></span>
+              </a>
+            </dd>
+          </div>
+          
+        </dl><br><br>
+
+        <h2 class="govuk-heading-m"> Bespoke licence condition details
+        </h2>
+
+        
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Bespoke condition
             </dt>
             <dd class="govuk-summary-list__value">
               No
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> name</span>
+                Change<span class="govuk-visually-hidden"></span>
               </a>
             </dd>
           </div>
           
-        
-        </dl><br>
+        </dl><br><br>
+
+        <h2 class="govuk-heading-m">Post sentence supervision additional condition details</h2>
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          
+
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Additional post sentence supervision conditions
+              Drug appointment
             </dt>
             <dd class="govuk-summary-list__value">
-              Yes
+              Attend [INSERT APPOINTMENT TIME DATE AND ADDRESS], as directed, to address your dependency on, or propensity to misuse, a controlled drug.<br><br> <strong>2:30pm 23 August 2021 <br>Drug Centre Buildings, 13 Palmerston Road, London, SE2 3ED </strong>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
@@ -59,9 +87,30 @@
               </a>
             </dd>
           </div>
+
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Drug testing
+
+
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Attend [INSERT NAME AND ADDRESS], as reasonably required by your supervisor, to give a sample of oral fluid / urine in order to test whether you have any specified Class A or specified Class B drugs in your body, for the purpose of ensuring that you are complying with the requirement of your supervision period requiring you to be of good behaviour.<br><br> <strong>Drug Centre Buildings, 13 Palmerston Road, London, SE2 3ED </strong>
+              
+
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+               Change <span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
           
+
+        </dl><br><br>
+
         
-        </dl><br>
 
         <h2 class="govuk-heading-m"> Induction meeting details</h2>
 
@@ -72,7 +121,7 @@
               Name
             </dt>
             <dd class="govuk-summary-list__value">
-              {{ data['full-name'] }}
+              Samual Toogood
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
@@ -86,14 +135,10 @@
              Address
             </dt>
             <dd class="govuk-summary-list__value">
-              {{ data['address'] }}<br>
-              {{ data['address-line-2'] }}<br>
-              {{ data['address-town'] }}<br>
-              {{ data['address-county'] }}<br>
-              {{ data['address-postcode'] }}<br>
+              Lewisham Probation Office, 20 Brockley Street, Lewisham, London, SE13 4HY
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="address">
+              <a class="govuk-link" href="#">
                 Change<span class="govuk-visually-hidden"> licence type</span>
               </a>
             </dd>
@@ -104,7 +149,7 @@
               Contact phone number
             </dt>
             <dd class="govuk-summary-list__value">
-              {{ data['telephone-number'] }}
+              0798 443 0099
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
@@ -118,7 +163,7 @@
               Date
             </dt>
             <dd class="govuk-summary-list__value">
-              {{ data['when-day'] }} : {{ data['when-month'] }} : {{ data['when-year'] }}
+              31 May 2023
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
@@ -132,7 +177,7 @@
               Time
             </dt>
             <dd class="govuk-summary-list__value">
-              {{ data['when-hour'] }} : {{ data['when-minute'] }} {{ data['when-am'] }}<br>
+              5:30pm
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
@@ -140,6 +185,8 @@
               </a>
             </dd>
           </div>
+
+          
         </dl>
 
 
