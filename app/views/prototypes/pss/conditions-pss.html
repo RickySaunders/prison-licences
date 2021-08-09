@@ -107,58 +107,51 @@
               </label>
             </div>
             <div class="govuk-checkboxes__conditional" id="pss-test-conditional">
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="name">
-                  Enter name
-                </label>
-                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+              <form action="answers-check" method="post" class="form">  
                 <div class="govuk-form-group">
-                 <br> <label class="govuk-label" for="address-line-1">
-                    Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+                  <label class="govuk-label" for="full-name">
+                    Name
                   </label>
-                  <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1"></div>
+                  <input class="govuk-input" id="full-name" name="full-name" type="text" spellcheck="false" autocomplete="name"></div>
+                 
+                 <div class="govuk-form-group">
+                  <label class="govuk-label" for="building">
+                    Building and street
+                  </label>
+                  <input class="govuk-input" id="building" name="building" type="text" spellcheck="false" autocomplete="building"></div>
+                  
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-line-2">
+                        <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                      </label>
+                      <input class="govuk-input" id="street" name="street" type="text" spellcheck="false" autocomplete="street"></div>
+                  
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-town">
+                        Town or city
+                      </label>
+                      <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+                  
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-county">
+                        County
+                      </label>
+                      <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+                  
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="address-postcode">
+                        Postcode
+                      </label>
+                      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code">
+                    </div>
               
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="address-line-2">
-                    <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
-                  </label>
-                  <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2"></div>
-              
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="address-town">
-                    Town or city
-                  </label>
-                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
-              
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="address-county">
-                    County
-                  </label>
-                  <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
-              
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="address-postcode">
-                    Postcode
-                  </label>
-                  <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
-            </div>
-          </div>
-
                    
-        </div>
-
-      </fieldset>
-    </div>
-
-
-          <a href="meet" class="govuk-button show-continue" style="display: inline;">
-      Continue
-    </a>
-       
- </div>
-</div>
+                </fieldset>    
+               </div>
         
+               <button class="govuk-button" data-module="govuk-button">Continue</button>
 
+               </div>
 
 
 {% endblock %}
