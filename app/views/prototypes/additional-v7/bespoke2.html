@@ -35,14 +35,28 @@
       You must have Public Protection Casework Section (PPCS) approval to add a bespoke condition. 
     </div>
   
-    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
-    <div class="moj-button-action">
+    
+    <div data-module="moj-add-another">
                   
-      <button class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button">
-        Add another bespoke condition
-      </button>
-
-    </div><br>
+      <form method="post">
+    
+        <fieldset class="govuk-fieldset moj-add-another__item">
+          <div class="govuk-form-group">
+            
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
+            <div class="moj-button-action">
+    
+              <button class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button">
+                Add another bespoke condition
+              </button>
+        
+            </div><br>
+          
+        </fieldset>
+    
+      </form>
+    
+    </div>
 
     <a href="check-your-answers" class="govuk-button show-continue" style="display: inline;">
       Continue</a>
