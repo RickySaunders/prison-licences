@@ -102,10 +102,14 @@
           </div>
 
           
-        </dl>
+        </dl><br>
 
         
         <h2 class="govuk-heading-m">Additional licence conditions details</h2>
+        <p align="right"> <a class="govuk-link" href="conditions-all">
+          Change</a></p>
+
+        
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
           <div class="govuk-summary-list__row">
@@ -117,7 +121,7 @@
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="conditions-all">
-                Change<span class="govuk-visually-hidden"> name</span>
+              <span class="govuk-visually-hidden"> name</span>
               </a>
             </dd>
           </div>
@@ -223,7 +227,14 @@
               </a>
             </dd>
           </div>
-          </dl><br><br>
+          </dl><br>
+          <form action="/form-handler" method="post" novalidate>
+
+            <input type="hidden" name="answers-checked" value="true">
+
+      <a href="conditions-all"  class="govuk-button govuk-button--secondary">Edit additional conditions</a>
+  
+          </form><br><br><br>
 
 
 
@@ -246,7 +257,7 @@
             </dd>
           </div>
           
-        </dl><br><br>
+        </dl><br>
 
 
         <a href="confirmation" class="govuk-button" type="submit">Send licence conditions to prison</a>
