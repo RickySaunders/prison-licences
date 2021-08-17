@@ -235,18 +235,40 @@
               </label>
             </div>
             <div class="govuk-checkboxes__conditional" id="seek-conditional">
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="address-town">
-                    Enter name of victim or family member
-                  </label>
-                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
-              
-                <div class="govuk-form-group">
-                  <label class="govuk-label" for="address-county">
-                    Enter social services department
-                  </label>
-                  <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
-              
+
+                  <div data-module="moj-add-another">
+                  
+                    <form method="post">
+                  
+                      <fieldset class="govuk-fieldset moj-add-another__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="victims">
+                            Enter name of victim or family member
+                          </label>
+                          <input class="govuk-input govuk-!-width-two-thirds" id="victim" name="address-town" type="text" autocomplete="address-level2"></div>
+                          <br>
+                        
+                  
+                      </fieldset><br>
+                      
+                      <div class="moj-button-action">
+                        <button class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button">
+                          Add another person
+                        </button>
+                  
+                      </div><br>
+                      <div class="govuk-form-group">
+                          <label class="govuk-label" for="social-services">
+                            Enter social services department
+                          </label>
+                          <input class="govuk-input govuk-!-width-two-thirds" id="social-services" name="social-services" type="text"></div>     
+                  
+                    </form>
+                  
+                  </div>
+                  
+
+    </div>
                 
             </div>
           </div><br>
@@ -331,12 +353,32 @@
               
               
                 <div class="govuk-form-group">
-                  <label class="govuk-label" for="address-town">
-                    Enter name of offender or individual
-                  </label>
-                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+                  
               
-                
+                  <div data-module="moj-add-another">
+                  
+                    <form method="post">
+                  
+                      <fieldset class="govuk-fieldset moj-add-another__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="victims">
+                            Enter name of offender or individual
+                          </label>
+                          <input class="govuk-input govuk-!-width-two-thirds" id="victim" name="address-town" type="text" autocomplete="address-level2"></div>
+                          <div class="moj-button-action">
+                  
+                            <button class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button">
+                              Add another person
+                            </button>
+                      
+                          </div>
+                        
+                  
+                      </fieldset>
+                  
+                    </form>
+                  
+                  </div>
                 
             </div>
           </div><br>
@@ -366,12 +408,39 @@
                 Not to associate with any person currently or formerly associated with [NAME OF DESCRIBE SPECIFIC GROUPS OR ORGANISATIONS] without the prior approval of your supervising officer.
             </label>
           </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="group" name="group" type="checkbox" value="email" data-aria-controls="group-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="group-conditional">
+                Not to associate with any person currently or formerly associated with [NAME OF DESCRIBE SPECIFIC GROUPS OR ORGANISATIONS] without the prior approval of your supervising officer.
+            </label>
+          </div>
+
+          
           <div class="govuk-checkboxes__conditional" id="group-conditional">
-            <div class="govuk-form-group">
-              <label class="govuk-label" for="contact-by-email">
-                Enter name of group or organisation
-              </label>
-              <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" value="John Smith"  name="contact-by-email" type="email" spellcheck="false">
+            <div data-module="moj-add-another">
+                  
+              <form method="post">
+            
+                <fieldset class="govuk-fieldset moj-add-another__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="victims">
+                      Enter name of group or organisation
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="victim" name="address-town" type="text" autocomplete="address-level2"></div>
+                    <div class="moj-button-action">
+            
+                      <button class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button">
+                        Add another group or organisation
+                      </button>
+                
+                    </div>
+                  
+            
+                </fieldset>
+            
+              </form>
+            
             </div>
     
           </div>
@@ -387,11 +456,100 @@
           
 
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" checked type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
-              <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
-                To comply with any requirements specified by your supervising officer for the purpose of ensuring that you address your alcohol / drug / sexual / violent / gambling / solvent abuse / anger / debt / prolific / offending behaviour problems.
+            
+
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="comply" name="comply" type="checkbox" value="email" data-aria-controls="comply-conditional">
+                <label class="govuk-label govuk-checkboxes__label" for="comply-conditional">
+                  To comply with any requirements specified by your supervising officer for the purpose of ensuring that you address your alcohol / drug / sexual / violent / gambling / solvent abuse / anger / debt / prolific offending / offending behaviour/ problems.
+
               </label>
+            </div><br>
+            <div class="govuk-checkboxes__conditional" id="comply-conditional">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="comply-hint">
+                  
+                  <div id="comply-hint" class="govuk-hint">
+                    Select all that apply.
+                  </div>
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="alcohol">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste">
+                        Alcohol
+                      </label>
+                    </div>
+  
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="drug">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste">
+                        Drug
+  
+                      </label>
+                    </div>
+  
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="sexual">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste">
+                        Sexual
+                      </label>
+                    </div>
+  
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="violent">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste">
+                        Violent
+                      </label>
+                    </div>
+  
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="gambling">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste">
+                        Gambling
+                      </label>
+                    </div>
+  
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="solvent">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste">
+                        Solvent abuse
+                      </label>
+                    </div>
+  
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="anger">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste">
+                        Anger
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="debt">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                        Debt
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="prolific">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                        Prolific offending 
+                      </label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="offending">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                        Offending behaviour
+                      </label>
+                    </div>
+  
+                    
+                    
+                    
+                </fieldset>
+              </div> <br>   
+                    
+              </div>
             </div>
             
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
@@ -1143,104 +1301,48 @@
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="electronic" name="electronic" type="checkbox" value="email" data-aria-controls="electronic-conditional">
               <label class="govuk-label govuk-checkboxes__label" for="electronic-conditional">
-                Allow person(s) as designated by your supervising officer to install an electronic monitoring tag on you and access to install any associated equipment in your property, and for the purpose of ensuring that equipment is functioning correctly. You must not damage or tamper with these devices and ensure that the tag is charged, and report to your supervising officer and the EM provider immediately if the tag or the associated equipment are not working correctly. This will be for the purpose of monitoring your [INSERT TYPES OF CONDITIONS TO BE ELECTRONICALLY MONITORED HERE] licence condition(s) unless otherwise authorised by your supervising officer.
+                Allow person(s) as designated by your supervising officer to install an electronic monitoring tag on you and access to install any associated equipment in your property, and for the purpose of ensuring that equipment is functioning correctly. You must not damage or tamper with these devices and ensure that the tag is charged, and report to your supervising officer and the EM provider immediately if the tag or the associated equipment are not working correctly. This will be for the purpose of monitoring your [INSERT TYPES OF CONDITIONS TO BE ELECTRONICALLY MONITORED] licence condition(s) unless otherwise authorised by your supervising officer.
             </label>
           </div><br>
           <div class="govuk-checkboxes__conditional" id="electronic-conditional">
             <div class="govuk-form-group">
               <fieldset class="govuk-fieldset" aria-describedby="electronic-hint">
-                
                 <div id="electronic-hint" class="govuk-hint">
                   Select all that apply.
                 </div>
-                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                     <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Residence at a specific place
-                    </label>
-                  </div>
-
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Restriction of residency
-
+                      Exclusion zone
                     </label>
                   </div>
 
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                     <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Making or maintaining contact with a person
+                      Curfew
+
                     </label>
                   </div>
 
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                     <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Participation in, or co-operation with, a programme or set of activities
+                      Location monitoring
                     </label>
                   </div>
 
                   <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
                     <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Possession, ownership, control or inspection of specified items or documents
+                      Attendance
                     </label>
                   </div>
-
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Disclosure of information
-                    </label>
                   </div>
-
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">
-                      Curfew arrangement
-                    </label>
-                  </div>
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                      Freedom of movement
-                    </label>
-                  </div>
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                      Supervision in the community by the supervising officer, or other responsible officer, or organisation
-                    </label>
-                  </div>
-
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                      Restriction of specified conduct or specified acts
-                    </label>
-                  </div>
-
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                      Extremism
-                    </label>
-                  </div>
-
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                      Drug testing
-                    </label>
-                  </div>
-              </fieldset>
+  
+              </fieldset><br>
             </div>    
-                  
-            </div>
-          </div>
           </div>
 
 
@@ -1337,7 +1439,7 @@
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="approved" name="approved" type="checkbox" value="approved" data-aria-controls="approved-conditional">
               <label class="govuk-label govuk-checkboxes__label" for="approved">
-                You must stay at [approved address] between 5pm and midnight every day until your electronic tag is installed unless otherwise authorised by your supervising officer.
+                You must stay at [APPROVED ADDRESS] between 5pm and midnight every day until your electronic tag is installed unless otherwise authorised by your supervising officer.
               </label>
             </div>
             
@@ -1478,7 +1580,7 @@
     </div>
 
 
-          <a href="vary" class="govuk-button show-continue" style="display: inline;">
+          <a href="check-your-answers" class="govuk-button show-continue" style="display: inline;">
       Continue
     </a>
        
