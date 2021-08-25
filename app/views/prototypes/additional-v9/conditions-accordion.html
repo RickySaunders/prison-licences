@@ -34,6 +34,575 @@
           Select all relevant conditions.
         </div><br>
 
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Residence at a specific place
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+         
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="own" name="own" type="checkbox" value="email" data-aria-controls="own-conditional">
+                    <label class="govuk-label govuk-checkboxes__label" for="own-conditional">
+                      You must reside within [INSERT REGION] while of no fixed abode, unless otherwise approved by your supervising officer.
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__conditional" id="own-conditional">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="contact-by-email">
+                      Enter probation region
+                    </label>
+                    <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+                  </div>
+          
+                </div>
+              </div></div>
+            </div>
+          </div>
+
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                  Restriction of residency
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" aria-controls="conditional-citizenship-conditional" aria-expanded="true">
+            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+              Not to reside (not even to stay for one night) in the same household as [ANY / ANY FEMALE / ANY MALE] child under the age of [INSERT AGE] without the prior approval of your supervising officer.
+            </label>
+          </div><br>
+          <div class="govuk-checkboxes__conditional" id="conditional-citizenship-conditional">
+            <div class="govuk-form-group">
+              <div class="govuk-radios">
+                <label class="govuk-label" for="controlled-drug">
+                  Select the relevant text
+                </label>
+              <br>
+                <div class="govuk-radios__item">
+                  
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    any
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    any female
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                    any male
+                  </label>
+                </div>
+                
+              </div><br><br><br>
+
+              <label class="govuk-label" for="controlled-drug">
+                Select the relevant age
+              </label>
+            <br>
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  16 years
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  18 years
+                </label>
+              </div>
+            </div>
+            </div>
+    
+          </div>
+         
+          
+        </div>
+            </div>
+          </div>
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Making or maintaining contact with a person
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british" aria-describedby="nationality-item-hint">
+            <label class="govuk-label govuk-checkboxes__label" for="nationality">
+              Attend all appointments arranged for you with a psychiatrist / psychologist / medical practitioner.
+          </div>
+    
+           
+          </div><br>
+
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="mentalhealth" name="mentalhealth" type="checkbox" value="email" data-aria-controls="mentalhealth-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="mentalhealth-conditional">
+                Receive home visits from a Mental Health Worker.
+            </label>
+          </div>
+         
+          
+        <br>
+
+
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="appointment" name="appointment" type="checkbox" value="controlled drug" data-aria-controls="appointment-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="appointment">
+                Attend [INSERT APPOINTMENT TIME DATE AND ADDRESS], as directed, to address your dependency on, or propensity to misuse, a controlled drug.
+              </label>
+            </div>
+            
+          <br>
+            <div class="govuk-checkboxes__conditional" id="appointment-conditional">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="controlled-drug">
+                  Enter time and date
+                </label>
+                <label class="govuk-label" for="date">
+                  Time
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"><br>
+                <br> <label class="govuk-label" for="controlled-drug">
+                  Date
+                </label>
+                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+                
+                <br><br><br>
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="controlled-drug">
+                    Enter address
+                  </label>
+                  <label class="govuk-label" for="address-line-1">
+                    Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-line-2">
+                    <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-town">
+                    Town or city
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-county">
+                    County
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-postcode">
+                    Postcode
+                  </label>
+                  <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
+            
+            </div>
+          </div>
+
+          
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+              Should you return to the UK and Islands before the expiry date of your licence then your licence conditions will be in force and you must report within two working days to your supervising officer.
+
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="seek" name="seek" type="checkbox" value="email" data-aria-controls="seek-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="seek-conditional">
+                Not to seek to approach or communicate with [INSERT NAME OF VICTIM AND / OR FAMILY MEMBERS] without the prior approval of your supervising officer and / or [INSERT NAME OF APPROPRIATE SOCIAL SERVICES DEPARTMENT].
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="seek-conditional">
+
+                  <div data-module="moj-add-another">
+                  
+                    <form method="post">
+                  
+                      <fieldset class="govuk-fieldset moj-add-another__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="victims">
+                            Enter name of victim or family member
+                          </label>
+                          <input class="govuk-input govuk-!-width-two-thirds" id="victim" name="address-town" type="text" autocomplete="address-level2"></div>
+                          <br>
+                        
+                  
+                      </fieldset><br>
+                      
+                      <div class="moj-button-action">
+                        <button class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button">
+                          Add another person
+                        </button>
+                  
+                      </div><br>
+                      <div class="govuk-form-group">
+                          <label class="govuk-label" for="social-services">
+                            Enter social services department
+                          </label>
+                          <input class="govuk-input govuk-!-width-two-thirds" id="social-services" name="social-services" type="text"></div>     
+                  
+                    </form>
+                  
+                  </div>
+                  
+
+                  </div>
+                
+            </div>
+          </div><br>
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="unsupervised" name="unsupervised" type="checkbox" value="male" data-aria-controls="unsupervised-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="unsupervised">
+                Not to have unsupervised contact with [ANY / ANY FEMALE / ANY MALE] children under the age of [INSERT AGE] without the prior approval of your supervising officer and / or [INSERT NAME OF APPROPRIATE SOCIAL SERVICES DEPARTMENT] except where that contact is inadvertent and not reasonably avoidable in the course of lawful daily life.
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="unsupervised-conditional">
+              <div class="govuk-form-group">
+              <div class="govuk-radios">
+                <label class="govuk-label" for="controlled-drug">
+                  Select the relevant text
+                </label>
+              <br>
+                <div class="govuk-radios__item">
+                  
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    any
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    any female
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                    any male
+                  </label>
+                </div>
+                
+              </div><br><br><br>
+
+              <label class="govuk-label" for="controlled-drug">
+                Select the relevant age
+              </label>
+            <br>
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  16 years
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                  18 years
+                </label>
+              </div>
+              </div><br><br>
+          
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-town">
+                    Or social services department
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+
+            </div>
+          </div>
+
+          
+         
+          
+          <br> 
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="offender" name="offender" type="checkbox" value="email" data-aria-controls="offender-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="offender-conditional">
+                Not to contact or associate with [NAMED OFFENDER(S) / NAMED INDIVIDUAL(S)] without the prior approval of your supervising officer. 
+              </label>
+            </div>
+            <div class="govuk-checkboxes__conditional" id="offender-conditional">
+              
+              
+                <div class="govuk-form-group">
+                  
+              
+                  <div data-module="moj-add-another">
+                  
+                    <form method="post">
+                  
+                      <fieldset class="govuk-fieldset moj-add-another__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="victims">
+                            Enter name of offender or individual
+                          </label>
+                          <input class="govuk-input govuk-!-width-two-thirds" id="victim" name="address-town" type="text" autocomplete="address-level2"></div>
+                          <div class="moj-button-action">
+                  
+                            <button class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button">
+                              Add another person
+                            </button>
+                      
+                          </div>
+                        
+                  
+                      </fieldset>
+                  
+                    </form>
+                  
+                  </div>
+                
+            </div>
+          </div><br>
+          
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+              Not to contact or associate with a known sex offender other than when compelled by attendance at a Treatment Programme or when residing at Approved Premises without the prior approval of your supervising officer
+            </label>
+          </div>
+
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+            <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+              Not to contact directly or indirectly any person who is a serving or remand prisoner or detained in State custody, without the prior approval of your supervising officer.
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="group" name="group" type="checkbox" value="email" data-aria-controls="group-conditional">
+              <label class="govuk-label govuk-checkboxes__label" for="group-conditional">
+                Not to associate with any person currently or formerly associated with [NAME OF DESCRIBE SPECIFIC GROUPS OR ORGANISATIONS] without the prior approval of your supervising officer.
+            </label>
+          </div>
+
+          
+          <div class="govuk-checkboxes__conditional" id="group-conditional">
+            <div data-module="moj-add-another">
+                  
+              <form method="post">
+            
+                <fieldset class="govuk-fieldset moj-add-another__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="victims">
+                      Enter name of group or organisation
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="victim" name="address-town" type="text" autocomplete="address-level2"></div>
+                    <div class="moj-button-action">
+            
+                      <button class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button">
+                        Add another group or organisation
+                      </button>
+                
+                    </div>
+                  
+            
+                </fieldset>
+            
+              </form>
+            
+            </div>
+    
+          </div>
+          
+          </div>
+        </div>
+            </div>
+          </div>
+          </div>
+
+
+
+          
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Participation in, or co-operation with, a programme or set of activities
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Possession, ownership, control or inspection of specified items or documents
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Disclosure of information
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Curfew arrangement
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Freedom of movement
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Supervision in the community by the supervising officer, or other responsible officer, or organisation
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Restriction of specified conduct or specified acts
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Extremism
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Polygraphs
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                  Drug testing
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+              <p class='govuk-body'>This is the content for Know your audience.</p>
+            </div>
+          </div>
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                  Electronic monitoring
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+              <p class='govuk-body'>This is the content for How people read.</p>
+            </div>
+          </div>
+        </div>
+
         <h1 class="govuk-heading-l govuk-!-padding-top-7" id="">Residence at a specific place </h1>
 
         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
