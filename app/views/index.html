@@ -7,63 +7,146 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Create and vary a licence
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">Prototypes: Create and vary a licence</h1><br />
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head" >
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Version</th>
+          <th scope="col" class="govuk-table__header">Status</th>
+          <th scope="col" class="govuk-table__header">Notes</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" >
+            <a href="/3/config" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-27 govuk-!-font-weight-bold">v3</a>
+          </td>
+          <td class="govuk-table__cell" style="min-width: 250px;" >
+            <strong class="govuk-tag" style="background: purple;">
+              IN PROGRESS
+            </strong>
+            <br>
+          </td>
+          <td class="govuk-table__cell">
+            <ul>
+              <li>Journey with no case admin check - probation send directly to prison approver for approval</li>
+              <li>Probation officer- creates licence, amend licence</li>
+              <li>Prison approver - approves or rejects and deals with probation</a>
+              <li>Case admin - can only print licence, and only when it's been approved.</li>
+            </ul>
+          </td>
+        </tr>
 
 
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" >
+            <a href="/2/config" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-27 govuk-!-font-weight-bold">v2</a>
+          </td>
+          <td class="govuk-table__cell" style="min-width: 250px;" >
+            <strong class="govuk-tag" style="background: purple;">
+              IN PROGRESS
+            </strong>
+            <br>
+          </td>
+          <td class="govuk-table__cell">
+            <ul>
+              <li>Journey with case probation sending to case admin and checking before governor approval</li>
+              <li>Probation officer - creates licence, amend licence</li>
+              <li>Case admin - checks licence, submits to prison approver for approval or rejects and deals with probation</a>
+              <li>Prison approver - approves or rejects</a>
+              <li>Case admin - can  print licence, when it's been approved, or push back to probation if rejected by approver.</li>
 
+              <li>Combined 'create licence' and 'vary licence' in one journey</li>
 
-      <h2 class="govuk-heading-m">Discovery June 2021 TEST</h2>
-
-
-      <p>First - borrowing screens from other GDS admin services <a href="prototypes/start/details">Start</a></p>
-
-      <br><br>
-
-      <h2 class="govuk-heading-m">Alpha July 2021</h2>
-
-      <p>Change the process so that probation create the licence <a href="prototypes/alpha/details">Start</a></p>
-      <p>Updated with new content <a href="prototypes/alpha-start/details">Start</a></p>
-      <p>Version 1.0 UR session: all-purpose (AP) licence <a href="prototypes/caseload/details">Start</a></p>
-      <p>Version 2.0 UR session: all-purpose (AP) licence with user feedback changes <a href="prototypes/caseload-standard/details">Start</a></p>
-      <p>Version 2.5: AP licence with user input showing on check your answers <a href="prototypes/caseload-standard-answers/details">Start</a></p>
-      <p>Version happy-path: AP licence no conditions <a href="prototypes/ap-no-conditions/details">Start</a></p>
-      <br><br>
-
-      <h2 class="govuk-heading-m">Additional licence conditions August 2021</h2>
-      <p>Version 3.0 All-purpose (AP) licence with additional conditions <a href="prototypes/additional/details">Go</a></p>
-
-      <p>Version 4.0 UR session: With more detail in additional conditions <a href="prototypes/additional-v2/details">Go</a></p>
-      <p>Version 4.5 Additional conditions changes after speaking to Brian <a href="prototypes/additional-v3/details">Go</a></p>
-
-      <p>Version 6.0 Changes after UR feedback <a href="prototypes/additional-v6/details">Go</a></p>
-      <p>Version 7.0 For UR. Change order. Meeting first - conditions second. Check your answers - link to list of additional conditions <a href="prototypes/additional-v7/details">Go</a></p>
-      <p>Version 8.0 Experimental. Conditions first. Check your additional conditions + check your answers <a href="prototypes/additional-v8/details">Go</a></p>
-      <p>Version 9.0 For assessment. Change service name. <a href="prototypes/additional-v9/details">Go</a></p>
-      <br><br>
-
-      <h2 class="govuk-heading-m">Vary a licence</h2>
-      <p>Version 1.0 Starting to figure out coming back to change stuff <a href="prototypes/vary/details">Go</a></p>
-      <br><br>
-
-      <h2 class="govuk-heading-m">Post sentence supervision</h2>
-      <p>Version 1.0 PSS - say 'No' to additional + bespoke - select both PSS conditions <a href="prototypes/pss/details">Start</a></p>
-      <br><br>
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
-    </div>
+            </ul>
+          </td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" >
+            <a href="/prototypes/additional-v9/details" class="govuk-link govuk-link--no-visited-state govuk-!-font-size-27 govuk-!-font-weight-bold">v1</a>
+          </td>
+          <td class="govuk-table__cell" style="min-width: 250px;" >
+            <strong class="govuk-tag" style="background: blue;">
+              BASELINE
+            </strong>
+            <br>
+          </td>
+          <td class="govuk-table__cell">As was journey 27th Sept 2021</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
+
+
+
+
+
+
+
+
+      <details class="govuk-details" data-module="govuk-details">
+               <summary class="govuk-details__summary">
+                 <span class="govuk-details__summary-text">
+                   Archive
+                 </span>
+               </summary>
+               <div class="govuk-details__text">
+                 <h2 class="govuk-heading-m">Discovery June 2021 TEST</h2>
+
+
+                 <p>First - borrowing screens from other GDS admin services <a href="prototypes/start/details">Start</a></p>
+
+                 <br><br>
+
+                 <h2 class="govuk-heading-m">Alpha July 2021</h2>
+
+                 <p>Change the process so that probation create the licence <a href="prototypes/alpha/details">Start</a></p>
+                 <p>Updated with new content <a href="prototypes/alpha-start/details">Start</a></p>
+                 <p>Version 1.0 UR session: all-purpose (AP) licence <a href="prototypes/caseload/details">Start</a></p>
+                 <p>Version 2.0 UR session: all-purpose (AP) licence with user feedback changes <a href="prototypes/caseload-standard/details">Start</a></p>
+                 <p>Version 2.5: AP licence with user input showing on check your answers <a href="prototypes/caseload-standard-answers/details">Start</a></p>
+                 <p>Version happy-path: AP licence no conditions <a href="prototypes/ap-no-conditions/details">Start</a></p>
+                 <br><br>
+
+                 <h2 class="govuk-heading-m">Additional licence conditions August 2021</h2>
+                 <p>Version 3.0 All-purpose (AP) licence with additional conditions <a href="prototypes/additional/details">Go</a></p>
+
+                 <p>Version 4.0 UR session: With more detail in additional conditions <a href="prototypes/additional-v2/details">Go</a></p>
+                 <p>Version 4.5 Additional conditions changes after speaking to Brian <a href="prototypes/additional-v3/details">Go</a></p>
+
+                 <p>Version 6.0 Changes after UR feedback <a href="prototypes/additional-v6/details">Go</a></p>
+                 <p>Version 7.0 For UR. Change order. Meeting first - conditions second. Check your answers - link to list of additional conditions <a href="prototypes/additional-v7/details">Go</a></p>
+                 <p>Version 8.0 Experimental. Conditions first. Check your additional conditions + check your answers <a href="prototypes/additional-v8/details">Go</a></p>
+                 <p>Version 9.0 For assessment. Change service name. <a href="prototypes/additional-v9/details">Go</a></p>
+                 <br><br>
+
+                 <h2 class="govuk-heading-m">Vary a licence</h2>
+                 <p>Version 1.0 Starting to figure out coming back to change stuff <a href="prototypes/vary/details">Go</a></p>
+                 <br><br>
+
+                 <h2 class="govuk-heading-m">Post sentence supervision</h2>
+                 <p>Version 1.0 PSS - say 'No' to additional + bespoke - select both PSS conditions <a href="prototypes/pss/details">Start</a></p>
+                 <br><br>
+                 <h2 class="govuk-heading-m">Examples and documentation</h2>
+
+                 <ul class="govuk-list govuk-list--bullet">
+                   <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
+                   <li>
+                     <a href="https://design-system.service.gov.uk">
+                       GOV.UK Design System
+                     </a>
+                   </li>
+                 </ul>
+               </div>
+
+             </details>
+
+
+
 
 {% endblock %}

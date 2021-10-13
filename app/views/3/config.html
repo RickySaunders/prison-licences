@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">Create or vary a licence prototype</h1>
+
+    <form method="post" action="details">
+      <div class="govuk-form-group govuk-!-margin-bottom-8">
+      <div class="govuk-radios">
+        <label class="govuk-label govuk-!-font-weight-bold" for="user">
+          Show the journey for
+        </label>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="user-employer" name="user" type="radio" value="probation" checked="checked">
+          <label class="govuk-label govuk-radios__label" for="user-employer" checked="checked">
+            Probation practitioner
+          </label>
+        </div>
+
+
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="user-employer" name="user" type="radio" value="governor" >
+          <label class="govuk-label govuk-radios__label" for="user-employer">
+            Prison approver
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="user-provider" name="user" type="radio" value="admin">
+          <label class="govuk-label govuk-radios__label" for="user-provider">
+            Prison admin
+          </label>
+        </div>
+      </div>
+      </div>
+      <label class="govuk-label govuk-!-font-weight-bold" for="user">
+        Show numbers list for additional conditions for probation officer
+      </label>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="user-employer" name="shownumbers" type="radio" value="yes" checked="checked">
+        <label class="govuk-label govuk-radios__label" for="user-employer">
+        Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="user-provider" name="shownumbers" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="user-provider">
+          No
+        </label>
+      </div>
+    </div>
+    </div><br /><br /><br />
+
+
+
+      <div class="govuk-form-group">
+        <button type="submit" class="govuk-button" data-module="govuk-button">Start</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block pageScripts %}
+{{super()}}
+
+
+{% endblock %}
