@@ -29,7 +29,8 @@
 
 
       <div class="govuk-form-group">
-<h2 class="govuk-heading-s">{%if data.shownumbers=="yes"%}2A. {%endif%}Not to reside (not even to stay for one night) in the same household as [ANY / ANY FEMALE / ANY MALE] child under the age of [INSERT AGE] without the prior approval of your supervising officer. </h2>
+
+<h2 class="govuk-heading-s">{%if data.shownumbers=="yes"%}3F. {%endif%}Not to have unsupervised contact with [ANY / ANY FEMALE / ANY MALE] children under the age of [INSERT AGE] without the prior approval of your supervising officer and / or [INSERT NAME OF APPROPRIATE SOCIAL SERVICES DEPARTMENT] except where that contact is inadvertent and not reasonably avoidable in the course of lawful daily life.</h2>
 <label class="govuk-label" for="1a-answer">
   Which gender?
 </label>
@@ -37,20 +38,20 @@
       <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
         <div class="govuk-radios govuk-radios">
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="2a-answer-gender-any" name="2a-answer-gender" type="radio" value="any">
-            <label class="govuk-label govuk-radios__label" for="2a-answer-gender-any">
+            <input class="govuk-radios__input" id="3f-answer-gender-any" name="3f-answer-gender" type="radio" value="any">
+            <label class="govuk-label govuk-radios__label" for="3f-answer-gender-any">
               Any
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="2a-answer-gender-female" name="2a-answer-gender" type="radio" value="female">
-            <label class="govuk-label govuk-radios__label" for="2a-answer-gender-female">
+            <input class="govuk-radios__input" id="3f-answer-gender-female" name="23f-answer-gender" type="radio" value="female">
+            <label class="govuk-label govuk-radios__label" for="3f-answer-gender-female">
               Any female
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="2a-answer-gender-male" name="2a-answer-gender" type="radio" value="male">
-            <label class="govuk-label govuk-radios__label" for="2a-answer-gender-male">
+            <input class="govuk-radios__input" id="3f-answer-gender-male" name="3f-answer-gender" type="radio" value="male">
+            <label class="govuk-label govuk-radios__label" for="3f-answer-gender-male">
               Any male
             </label>
           </div>
@@ -64,22 +65,29 @@
       <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
         <div class="govuk-radios govuk-radios">
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="2a-answer-age-16" name="2a-answer-age" type="radio" value="16">
-            <label class="govuk-label govuk-radios__label" for="2a-answer-age-16">
+            <input class="govuk-radios__input" id="3f-answer-age-16" name="3f-answer-age" type="radio" value="16">
+            <label class="govuk-label govuk-radios__label" for="3f-answer-age-16">
               16
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="2a-answer-age-18" name="2a-answer-age" type="radio" value="16">
-            <label class="govuk-label govuk-radios__label" for="2a-answer-age-18">
+            <input class="govuk-radios__input" id="3f-answer-age-18" name="3f-answer-age" type="radio" value="16">
+            <label class="govuk-label govuk-radios__label" for="3f-answer-age-18">
               18
             </label>
           </div>
+          <br />
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="3f-answer-department"">
+              What is the social services department?
+            </label>
+            <input class="govuk-input govuk-input--width-30" id="3f-answer-department" name="3f-answer-department" type="text" autocomplete="3f-answer-department"></div>
+
 
         </div>
       </fieldset>
     </div>
-                <input type="hidden" name="2a" value="no">
+                <input type="hidden" name="3f" value="no">
           </div>
 
       </div>

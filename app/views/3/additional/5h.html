@@ -24,19 +24,19 @@
     <fieldset class="govuk-fieldset">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
         <h1 class="govuk-fieldset__heading">
-        Complete the licence condition</h1>
+      Complete the licence condition</h1>
       </legend><br>
 
 
       <div class="govuk-form-group">
-<p>{%if data.shownumbers=="yes"%}1A. {%endif%}You must reside within [INSERT REGION] while of no fixed abode, unless otherwise approved by your supervising officer. </p>
+<h2 class="govuk-heading-s">{%if data.shownumbers=="yes"%}5H. {%endif%}Not to own or possess a [SPECIFIED ITEM) without the prior approval of your supervising officer. </h2>
           <div class="govuk-radios govuk-radios--inline">
             <div class="govuk-form-group">
-              <label class="govuk-label" for="1a-answer">
-              What is the probation region?
+              <label class="govuk-label" for="5h-answer"">
+                What is the specified item?
               </label>
-              <input class="govuk-input govuk-input--width-10" id="1a-answer" name="1a-answer" type="text" autocomplete="postal-code"></div>
-                <input type="hidden" name="1a" value="no">
+              <input class="govuk-input govuk-input--width-10" id="5h-answer" name="5h-answer" type="text" autocomplete="5h-answer"></div>
+                <input type="hidden" name="5h" value="no">
           </div>
 
       </div>

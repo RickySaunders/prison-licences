@@ -37,6 +37,7 @@ var version = '3';
    var a2 = req.session.data['2a'];
    var a3 = req.session.data['3a'];
    var c3 = req.session.data['3c'];
+   var c32 = req.session.data['3c2'];
    var e3 = req.session.data['3e'];
    var f3 = req.session.data['3f'];
    var g3 = req.session.data['3g'];
@@ -68,6 +69,9 @@ var version = '3';
     }
     else if (c3 == "yes"){
       res.redirect(version + '/additional/3c');
+    }
+    else if (c32 == "yes"){
+      res.redirect(version + '/additional/3c2');
     }
     else if (e3 == "yes"){
       res.redirect(version + '/additional/3e');
@@ -127,7 +131,7 @@ var version = '3';
       res.redirect(version + '/additional/14d');
     }
     else {
-      res.redirect(version +'/check-your-answers');
+      res.redirect(version +'/bespoke');
     }
     //END ADDITIONAL CONDITIONS
   });

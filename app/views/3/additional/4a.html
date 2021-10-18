@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+<a href="javascript:history.back()" class="govuk-back-link" style="margin-bottom:0">Back</a>
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+<form action="/conditions" method="post">
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+    Complete the licence condition</h1>
+      </legend><br>
+
+
+      <div class="govuk-form-group">
+<h2 class="govuk-heading-s">{%if data.shownumbers=="yes"%}4A. {%endif%}To comply with any requirements specified by your supervising officer for the purpose of ensuring that you address your alcohol / drug / sexual / violent / gambling / solvent abuse / anger / debt / prolific / offending behaviour problems.</h2>
+
+<label class="govuk-label" for="1a-answer">
+  What are the behaviour problems?
+</label>
+<span class="govuk-hint">Select all that apply</span>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+<div class="govuk-form-group">
+
+
+  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="4a-alcohol" name="4a-alcohol" type="checkbox" value="yes" data-aria-controls="own-conditional">
+      <label class="govuk-label govuk-checkboxes__label" for="4a-alcohol">
+      Alcohol
+    </label>
+  </div>
+</div>
+<br />
+<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="4a" name="4a" type="checkbox" value="yes" data-aria-controls="own-conditional">
+    <label class="govuk-label govuk-checkboxes__label" for="4a">
+      Drug
+  </label>
+</div>
+</div>
+<br />
+
+
+
+<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="4a" name="4a" type="checkbox" value="yes" data-aria-controls="own-conditional">
+    <label class="govuk-label govuk-checkboxes__label" for="1a">
+    Sexual
+  </label>
+</div>
+</div>
+<br />
+
+
+
+<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="4a" name="4a" type="checkbox" value="yes" data-aria-controls="own-conditional">
+    <label class="govuk-label govuk-checkboxes__label" for="1a">
+      Violent
+  </label>
+</div>
+</div>
+<br />
+<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="4a" name="4a" type="checkbox" value="yes" data-aria-controls="own-conditional">
+    <label class="govuk-label govuk-checkboxes__label" for="1a">
+      Gambling
+  </label>
+</div>
+</div>
+<br />
+<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="4a" name="4a" type="checkbox" value="yes" data-aria-controls="own-conditional">
+    <label class="govuk-label govuk-checkboxes__label" for="1a">
+      Solvent abuse
+  </label>
+</div>
+</div>
+<br />
+<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="4a" name="4a" type="checkbox" value="yes" data-aria-controls="own-conditional">
+    <label class="govuk-label govuk-checkboxes__label" for="1a">
+      Anger
+  </label>
+</div>
+</div>
+<br />
+<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="4a" name="4a" type="checkbox" value="yes" data-aria-controls="own-conditional">
+    <label class="govuk-label govuk-checkboxes__label" for="1a">
+      Debt
+  </label>
+</div>
+</div>
+<br />
+<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="4a" name="4a" type="checkbox" value="yes" data-aria-controls="own-conditional">
+    <label class="govuk-label govuk-checkboxes__label" for="1a">
+      Prolific
+  </label>
+</div>
+</div>
+<br />
+
+
+
+</div>
+<br /><br />
+
+    <input type="hidden" name="4a" value="no">
+          </div>
+      </div>
+<button type="submit" class="govuk-button" data-module="govuk-button">Continue</button>
+</form>
+{% endblock %}

@@ -29,40 +29,41 @@
 
 
       <div class="govuk-form-group">
-<h2 class="govuk-heading-s">{%if data.shownumbers=="yes"%}3A. {%endif%}Attend all appointments arranged for you with a psychiatrist / psychologist / medical practitioner.</h2>
 
-
+<p>{%if data.shownumbers=="yes"%}6B. {%endif%}Notify your supervising officer of any developing intimate relationships with [WOMEN / MEN / WOMEN OR MEN].</p>
 <label class="govuk-label" for="1a-answer">
-  Who will the appointments be with?
-  
+  What is the gender?
 </label>
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
         <div class="govuk-radios govuk-radios">
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="3a-psychiatrist" name="3a-answer" type="radio" value="psychiatrist">
-            <label class="govuk-label govuk-radios__label" for="3a-psychiatrist">
-              Psychiatrist
+            <input class="govuk-radios__input" id="6b-answer-women" name="6b-answer-women" type="radio" value="any">
+            <label class="govuk-label govuk-radios__label" for="6b-answer-women">
+              Any women
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="3a-psychologist" name="3a-answer" type="radio" value="psychologist">
-            <label class="govuk-label govuk-radios__label" for="3a-psychologist">
-              Psychologist
+            <input class="govuk-radios__input" id="6b-answer-gender-men" name="6b-answer-men" type="radio" value="female">
+            <label class="govuk-label govuk-radios__label" for="6b-answer-men">
+              Any men
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="3a-medical-practitioner" name="3a-answer" type="radio" value="medical practitioner">
-            <label class="govuk-label govuk-radios__label" for="3a-medical-practitioner">
-              Medical practitioner
+            <input class="govuk-radios__input" id="6b-answer-women-men" name="6b-answer-gender" type="radio" value="male">
+            <label class="govuk-label govuk-radios__label" for="6b-answer-women-men">
+              Any women or men
             </label>
           </div>
         </div>
       </fieldset>
     </div>
-    <input type="hidden" name="3a" value="no">
+
+                <input type="hidden" name="6b" value="no">
           </div>
+
       </div>
+
 <button type="submit" class="govuk-button" data-module="govuk-button">Continue</button>
 </form>
 {% endblock %}
